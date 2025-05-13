@@ -7,7 +7,6 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  standalone: true,
   imports: [CommonModule, MatSidenavModule, MatIconModule, MatToolbarModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'

@@ -6,7 +6,6 @@ import { SafeUrlPipe } from '../../pipes/safe-url.pipe';
 
 @Component({
   selector: 'app-project-view',
-  standalone: true,
   imports: [SafeUrlPipe],
   templateUrl: './project-view.component.html',
   styleUrl: './project-view.component.scss'

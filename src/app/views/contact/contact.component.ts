@@ -3,13 +3,12 @@ import { Component } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import emailjs from '@emailjs/browser';
 
-const SERVICE_ID: string = '';
-const TEMPLATE_ID: string = '';
-const PUBLIC_KEY: string = '';
+const SERVICE_ID: string = 'service_s4mnwj7';
+const TEMPLATE_ID: string = 'contact_form';
+const PUBLIC_KEY: string = 'yBmnKt51PdNvpsoaz';
 
 @Component({
   selector: 'app-contact',
-  standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
