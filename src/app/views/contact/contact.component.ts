@@ -9,7 +9,6 @@ const PUBLIC_KEY: string = '';
 
 @Component({
   selector: 'app-contact',
-  standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
