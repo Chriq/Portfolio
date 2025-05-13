@@ -4,7 +4,7 @@
         "title": "Flint's Hints",
         "shortDescription": "Flint's Hints is a point-and-click puzzle game where you investigate your surroundings to appease your fussy pet cat, Flint. Search for hints in this escape-room-like adventure to figure out what he wants and how to give it to him. As you explore the space, some of the items you encounter may seem a bit mysterious. It's up to you how for you want to pull on these threads…",
         "longDescription": "",
-        "coverImage": "/flints-hints.png",
+        "coverImage": "flints-hints.png",
         "embedUrl": "https://www.youtube.com/embed/woL9EnXDgIk",
         "projectLink": "https://store.steampowered.com/app/2660130/Flints_Hints/"
     },
@@ -13,7 +13,7 @@
         "title": "Pick Your Poison",
         "shortDescription": "A point-and-click game that balances strategy and chance as you face off against an ominous bartender gambling for your life. Take turns drinking from potentially poisoned glasses while trying to sabotage your opponent.",
         "longDescription": "",
-        "coverImage": "/pick-your-poison.png",
+        "coverImage": "pick-your-poison.png",
         "embedUrl": "https://www.youtube.com/embed/JYQoSm9O0k0",
         "projectLink": "https://store.steampowered.com/app/3575810/Pick_Your_Poison/"
     }
