@@ -1,0 +1,20 @@
+<!-- project.component.html -->
+<div class="project-container">
+  <div class="project-header">
+    <div class="project-text">
+      <h1>{{ project.title }}</h1>
+      <p class="short-description">{{ project.shortDescription }}</p>
+    </div>
+    <div class="project-video">
+      <iframe 
+        [src]="project.embedUrl | safeUrl" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <p class="long-description">{{ project.longDescription }}</p>
+  </div>
+</div>

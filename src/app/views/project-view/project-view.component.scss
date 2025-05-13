@@ -1,0 +1,45 @@
+.project-container {
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.project-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.project-text {
+  flex: 1 1 50%;
+}
+
+.project-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+}
+
+.short-description {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.project-video {
+  flex: 1 1 45%;
+}
+
+.project-video iframe {
+  width: 100%;
+  height: 250px;
+}
+
+.project-body {
+  margin-top: 30px;
+}
+
+.long-description {
+  font-size: 1em;
+  line-height: 1.6;
+}

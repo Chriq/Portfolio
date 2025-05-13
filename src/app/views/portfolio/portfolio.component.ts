@@ -1,0 +1,37 @@
+import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { Project } from '../../interfaces/media';
+import { ProjectService } from '../../services/project.service';
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'app-portfolio',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './portfolio.component.html',
+  styleUrl: './portfolio.component.scss'
+})
+export class PortfolioComponent implements OnInit {
+
+  constructor(
+    private projectService: ProjectService,
+    private router: Router
+  ) {}
+
+  projects: Project[];
+
+  ngOnInit() {
+    this.projectService.loadAllProjects().subscribe((response) => {
+      this.projects = response;
+    });
+  }
+
+  openProjectDetails() {
+
+  }
+
+  navigateTo(route: string) {
+    this.router.navigate(['portfolio/', route]);
+  }
+  
+}
