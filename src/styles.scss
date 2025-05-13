@@ -5,7 +5,7 @@
 // Plus imports for other components in your app.
 
 // Comment out the line below if you want to use the deprecated `color` inputs.
-// @include mat.color-variants-backwards-compatibility($scaredy-cat-theme);
+// @include mat.color-variants-backwards-compatibility($portfolio-theme);
 // @use '@angular/material' as mat;
 @use 'SASS:map';
 @include mat.core();
@@ -16,7 +16,7 @@
 //@include mat.core();
 
 // Define the theme object.
-$scaredy-cat-theme: mat.define-theme((
+$portfolio-theme: mat.define-theme((
   color: (
     theme-type: light,
     primary: mat.$azure-palette,
@@ -31,12 +31,12 @@ $scaredy-cat-theme: mat.define-theme((
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 :root {
-  @include mat.all-component-themes($scaredy-cat-theme);
+  @include mat.all-component-themes($portfolio-theme);
 }
 
 // Comment out the line below if you want to use the pre-defined typography utility classes.
 // For more information: https://material.angular.io/guide/typography#using-typography-styles-in-your-application.
-// @include mat.typography-hierarchy($scaredy-cat-theme);
+// @include mat.typography-hierarchy($portfolio-theme);
 
 
 
