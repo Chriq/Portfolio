@@ -15,11 +15,9 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": {
-              "base": "dist/portfolio"
-            },
+            "outputPath": "dist/portfolio",
             "index": "src/index.html",
             "polyfills": [
               "zone.js"
@@ -36,7 +34,7 @@
               "src/styles.scss"
             ],
             "scripts": [],
-            "browser": "src/main.ts"
+            "main": "src/main.ts"
           },
           "configurations": {
             "production": {
