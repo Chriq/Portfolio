@@ -18,16 +18,24 @@
 
 .project-text h1 {
   font-size: 2.5em;
-  margin-bottom: 0.3em;
+  margin-bottom: 4px;
+  margin-top: 0px;
+}
+
+.info-text {
+  font-size: 0.75em;
+  color: #666;
 }
 
 .short-description {
-  font-size: 1.2em;
-  color: #666;
+  // font-size: 1em;
+  // color: #666;
+  line-height: 1.6;
 }
 
 .project-video {
   flex: 1 1 45%;
+  aspect-ratio: 16/9;
 }
 
 .project-video iframe {
@@ -42,4 +50,16 @@
 .long-description {
   font-size: 1em;
   line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .project-header {
+    flex-direction: column-reverse;
+    // align-items: center;
+    // text-align: center;
+  }
+
+  .project-video {
+    align-self: center;
+  }
 }

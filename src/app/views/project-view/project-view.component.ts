@@ -3,10 +3,11 @@ import { Router } from '@angular/router';
 import { ProjectService } from '../../services/project.service';
 import { Project } from '../../interfaces/media';
 import { SafeUrlPipe } from '../../pipes/safe-url.pipe';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-project-view',
-  imports: [SafeUrlPipe],
+  imports: [ CommonModule, SafeUrlPipe],
   templateUrl: './project-view.component.html',
   styleUrl: './project-view.component.scss'
 })
