@@ -3,10 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { Project } from '../../interfaces/media';
 import { ProjectService } from '../../services/project.service';
 import { Router } from '@angular/router';
+import {MatDividerModule} from '@angular/material/divider';
 
 @Component({
   selector: 'app-portfolio',
-  imports: [CommonModule],
+  imports: [CommonModule, MatDividerModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })

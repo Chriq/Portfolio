@@ -1,7 +1,7 @@
 .portfolio-container {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 2rem;
 }
 
 .project-card {
@@ -9,6 +9,8 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 2rem;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
 }
 
 .project-card.reverse {
@@ -25,13 +27,12 @@
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  transition: filter 0.3s ease, transform 0.3s ease;
-  cursor: pointer;
 }
 
-.project-image img:hover {
+
+.project-card:hover {
   filter: brightness(1.2);
-  transform: scale(1.01); /* optional slight zoom */
+  transform: scale(1.01);
 }
 
 
@@ -51,7 +52,6 @@
   color: #555;
 }
 
-/* Responsive layout: stack image and text */
 @media (max-width: 768px) {
   .project-card {
     grid-template-columns: 1fr;

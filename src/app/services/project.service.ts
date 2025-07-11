@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Project } from '../interfaces/media';
 import { Observable, of, BehaviorSubject, map } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectService {
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   projectMap: BehaviorSubject<Map<string, Project>> = new BehaviorSubject(null);
 
@@ -18,11 +19,19 @@ export class ProjectService {
   }
 
   getProjectById(id: string): Observable<Project> {
+    this.loadAllProjects().subscribe((result) => {
+      return this.projectMap.pipe(
+        map((response) => {
+          return response.get(id);
+        })
+      );
+    });  
+    
     return this.projectMap.pipe(
-      map((response) => {
-        return response.get(id);
-      })
-    )
+        map((response) => {
+          return response.get(id);
+        })
+      );
   }
 
   private toMap(arr: Project[]): Map<string, Project> {

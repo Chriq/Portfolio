@@ -1,10 +1,5 @@
-<!-- project.component.html -->
-<div class="project-container">
+<div *ngIf="project" class="project-container">
   <div class="project-header">
-    <div class="project-text">
-      <h1>{{ project.title }}</h1>
-      <p class="short-description">{{ project.shortDescription }}</p>
-    </div>
     <div class="project-video">
       <iframe 
         [src]="project.embedUrl | safeUrl" 
@@ -12,9 +7,30 @@
         allowfullscreen>
       </iframe>
     </div>
+
+    <div class="project-text">
+      <h1>Flint's Hints</h1>
+      <div class="info-text">
+        <i>Scaredy Cat Studios</i>&nbsp;&middot;&nbsp;<i>Jul. 26, 2024</i>&nbsp;&middot;&nbsp;<i>Point-and-Click, Puzzle, Psychological Horror</i>
+      </div>
+      <p class="short-description">Flint's Hints is a point-and-click puzzle game inspired by escape room mechanics. You are directly presented with the prompt to explore the house a fulfill 3 requests made by your pet cat, Flint. You must use context clues in the environment to determine what the requests are and how to fulfill them. Along the way, you may uncover other clues seemingly unrelated to your tasks. It is up to you whether you want to investigate further or not.</p>
+    </div>
   </div>
 
   <div class="project-body">
-    <p class="long-description">{{ project.longDescription }}</p>
+    <h2>Designing Escape-Room-Inspired Puzzles</h2>
+    <p class="long-description">Designing a virtual escape room seemed like the best direction given that the game space was in an environment with interactable objects and no player character. The biggest initial hurdle was designing core mechanics for use in the puzzle solving. Often the default mechanic in these types of experiences is a lock with a hidden combination. While I did use this a few times in the game, I also wanted to create something deeper than that.</p>
+    <p class="long-description">I decided that a phone and a computer were good household objects that could be used in interesting ways to create puzzles, requiring a bit more deduction and intent than a simple lock combination. From them, I created 3 puzzles, 1 for each, and another using both to test the player's understanding of how to engage with the world.</p>
+    <p class="long-description">For the clues, I took care to provide multiple avenues to discover the solutions for each, hidden in various forms. Some clues are hidden in photos, where you have to deduce based on what  is depicted. Others are suggested in key dialog lines and how they are phrased. Still more are in books, letters, and environment art. To ensure that players were not completely lost. I also left a paw print on one key clue for each puzzle, so there was always a starting point to go from.</p>
+  </div>
+
+  <div>
+    <gallery [items]="gallery" thumbs loop="true" thumbPosition="left" imageSize="cover"></gallery>
+  </div>
+
+  <div class="project-body">
+    <h2>Subtle Storytelling Through Hidden Mechanics</h2>
+    <p class="long-description">A key aspect of Flint's Hints is that the initial presentation lies purely on the surface. Far more lies hidden for curious, investigative players to find. It was difficult to decide <i>how</i> hidden I wanted to make the B-story. My initial desire was to take inspiration from internet ARG's and other indie horror games, making this side of the game very difficult to find. While this sort of exclusivity has its appeal, I decided that restricting an entire segment of the game was too much. I didn't want to leave the majority of my player base unsatisfied, so accessing the "spooky" segment of Flint's Hints only takes a bit of curiosity. I did leave one or two optional puzzles for more dedicated players.</p>
+    <p class="long-description">Even though I take inspiration from indie horror games, I tend not to like jump-scares, or other common tropes of the genre. I have a deep affection for more psychological games like OMORI and OneShot, games that build suspense through their narrative and other subtle game elements to elicit emotion. I wanted to emulate this experience, so I constructed a narrative that would slowly reveal itself the more players investigated, and limited the amount/intensity of jump-scares. The aim was the leave players in suspense, feeling as though they answered some questions, but raised far more.</p>
   </div>
 </div>

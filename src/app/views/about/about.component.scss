@@ -1,0 +1,40 @@
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile-photo {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.footer {
+    text-align: center;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .profile-photo {
+        width: 100%;
+        max-width: 300px;
+    }
+}
