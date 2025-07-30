@@ -1,24 +1,27 @@
-<div *ngIf="project" class="project-container">
-  <div class="project-header">
-    <div class="project-video">
-      <iframe *ngIf="project.embedUrl"
-        [src]="project.embedUrl | safeUrl" 
-        frameborder="0" 
-        allowfullscreen>
-      </iframe>
-
-      <img *ngIf="!project.embedUrl" [src]="project.coverImage"/>
-    </div>
-
-    <div class="project-text">
-      <h1>{{project.title}}</h1>
-      <div class="info-text">
-        <div><i>{{ project.developer }}</i>&nbsp;&middot;&nbsp;<i>{{ project.releaseDate | date }}</i></div>
-        <div><i>{{ project.genres?.join(', ')}}</i></div>
+@if (project) {
+  <div class="project-container">
+    <div class="project-header">
+      <div class="project-video">
+        @if (project.embedUrl) {
+          <iframe
+            [src]="project.embedUrl | safeUrl"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        }
+        @if (!project.embedUrl) {
+          <img [src]="project.coverImage"/>
+        }
       </div>
-      <p class="short-description">{{ project.shortDescription }}</p>
+      <div class="project-text">
+        <h1>{{project.title}}</h1>
+        <div class="info-text">
+          <div><i>{{ project.developer }}</i>&nbsp;&middot;&nbsp;<i>{{ project.releaseDate | date }}</i></div>
+          <div><i>{{ project.genres?.join(', ')}}</i></div>
+        </div>
+        <p class="short-description">{{ project.shortDescription }}</p>
+      </div>
     </div>
+    <ng-container *ngComponentOutlet="projectComponent"></ng-container>
   </div>
-
-  <ng-container *ngComponentOutlet="projectComponent"></ng-container>
-</div>
+}

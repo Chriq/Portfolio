@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject, OnInit, ViewChild } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormBuilder, Validators, FormGroupDirective } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -13,7 +13,7 @@ const PUBLIC_KEY: string = 'yBmnKt51PdNvpsoaz';
 
 @Component({
   selector: 'app-contact',
-  imports: [CommonModule, ReactiveFormsModule, MatInputModule, MatButtonModule, MatIcon ],
+  imports: [ReactiveFormsModule, MatInputModule, MatButtonModule, MatIcon],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })

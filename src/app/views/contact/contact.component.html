@@ -1,44 +1,38 @@
-<form *ngIf="contactForm" [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
-  <!-- <div *ngIf="sent" class="success-message">Message sent successfully!</div>
-  <div *ngIf="error" class="error-message">{{ error }}</div> -->
-
-  <div class="contact-header">
-    <h1>Let's Connect!</h1>
-    <span>Fill out the form below, or <a [href]="mailto" target="_blank" rel="noopener noreferrer">email</a> me at &nbsp;<i>christiancook52&commat;gmail.com</i></span>
-  </div>
-
-  <mat-form-field class="form-row-half">
-    <mat-label>First Name</mat-label>
-    <input matInput type="text"  formControlName="firstName" />
-  </mat-form-field>
-
-  <mat-form-field class="form-row-half">
-    <mat-label>Last Name</mat-label>
-    <input matInput type="text" formControlName="lastName" />
-  </mat-form-field>
-
-  <mat-form-field class="form-row">
-    <mat-label>Email</mat-label>
-    <input matInput type="email" formControlName="email" />
-  </mat-form-field>
-
-  <mat-form-field class="form-row">
-    <mat-label>Company</mat-label>
-    <input matInput type="text" formControlName="company" />
-  </mat-form-field>
-
-  <mat-form-field class="form-row">
-    <mat-label>Subject</mat-label>
-    <input matInput type="text" formControlName="subject" />
-  </mat-form-field>
-
-  <mat-form-field class="form-row">
-    <mat-label>Message</mat-label>
-    <textarea matInput formControlName="message" rows="5"></textarea>
-  </mat-form-field>
-
-  <button class="mat-button" mat-raised-button type="submit" [disabled]="!contactForm.valid || sending">
+@if (contactForm) {
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+    <!-- <div *ngIf="sent" class="success-message">Message sent successfully!</div>
+    <div *ngIf="error" class="error-message">{{ error }}</div> -->
+    <div class="contact-header">
+      <h1>Let's Connect!</h1>
+      <span>Fill out the form below, or <a [href]="mailto" target="_blank" rel="noopener noreferrer">email</a> me at &nbsp;<i>christiancook52&commat;gmail.com</i></span>
+    </div>
+    <mat-form-field class="form-row-half">
+      <mat-label>First Name</mat-label>
+      <input matInput type="text"  formControlName="firstName" />
+    </mat-form-field>
+    <mat-form-field class="form-row-half">
+      <mat-label>Last Name</mat-label>
+      <input matInput type="text" formControlName="lastName" />
+    </mat-form-field>
+    <mat-form-field class="form-row">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" formControlName="email" />
+    </mat-form-field>
+    <mat-form-field class="form-row">
+      <mat-label>Company</mat-label>
+      <input matInput type="text" formControlName="company" />
+    </mat-form-field>
+    <mat-form-field class="form-row">
+      <mat-label>Subject</mat-label>
+      <input matInput type="text" formControlName="subject" />
+    </mat-form-field>
+    <mat-form-field class="form-row">
+      <mat-label>Message</mat-label>
+      <textarea matInput formControlName="message" rows="5"></textarea>
+    </mat-form-field>
+    <button class="mat-button" mat-raised-button type="submit" [disabled]="!contactForm.valid || sending">
       <mat-icon>mail</mat-icon>
       <span>{{ sending ? 'Sending...' : 'Send Message' }}</span>
-  </button>
-</form>
+    </button>
+  </form>
+}

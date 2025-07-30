@@ -2,7 +2,9 @@
   <div class="title"(click)="navigateTo('portfolio');">Christian Cook - Game Developer</div>
 
   <nav class="nav-links">
-    <a *ngFor="let item of menuOptions" (click)='navigateTo(item)'>{{item}}</a>
+    @for (item of menuOptions; track item) {
+      <a (click)='navigateTo(item)'>{{item}}</a>
+    }
   </nav>
 
   <div class="hamburger" (click)="toggleMenu()">
@@ -12,7 +14,9 @@
   <div class="overlay" [class.open]="menuOpen">
     <a (click)="closeMenu()" class="close-btn">&times;</a>
     <div class="overlay-content">
-      <a *ngFor="let item of menuOptions" (click)="navigateTo(item); closeMenu()">{{item}}</a>
+      @for (item of menuOptions; track item) {
+        <a (click)="navigateTo(item); closeMenu()">{{item}}</a>
+      }
     </div>
   </div>
 </header>

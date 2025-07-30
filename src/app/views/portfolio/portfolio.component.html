@@ -1,15 +1,16 @@
-<div *ngIf="projects" class="portfolio-container">
-  <ng-container *ngFor="let project of projects; let i = index">
-    <mat-divider></mat-divider>
-    <div class="project-card" [ngClass]="{ 'reverse': i % 2 !== 0 }" (click)="navigateTo(project.id);">
-      
-      <div class="project-image">
-        <img [src]="project.coverImage" alt="{{ project.title }}" (click)="navigateTo(project.id);"/>
+@if (projects) {
+  <div class="portfolio-container">
+    @for (project of projects; track project; let i = $index) {
+      <mat-divider></mat-divider>
+      <div class="project-card" [ngClass]="{ 'reverse': i % 2 !== 0 }" (click)="navigateTo(project.id);">
+        <div class="project-image">
+          <img [src]="project.coverImage" alt="{{ project.title }}" (click)="navigateTo(project.id);"/>
+        </div>
+        <div class="project-info">
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.shortDescription }}</p>
+        </div>
       </div>
-      <div class="project-info">
-        <h2>{{ project.title }}</h2>
-        <p>{{ project.shortDescription }}</p>
-      </div>
-    </div>
-  </ng-container>
-</div>
+    }
+  </div>
+}
