@@ -2,25 +2,34 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
   background-color: #333;
   color: white;
   position: relative;
-  cursor: pointer;
 }
 
 .title {
   font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
 }
 
 .nav-links {
   display: flex;
   gap: 1rem;
+  cursor: pointer;
+  padding-right: 1rem;
 }
 
 .nav-links a {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
   color: white;
   text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
 }
 
 .hamburger {
@@ -78,5 +87,6 @@
 
   .hamburger {
     display: block;
+    margin: 8px;
   }
 }

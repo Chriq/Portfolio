@@ -1,5 +1,4 @@
 .project-container {
-  margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
@@ -41,14 +40,15 @@
 }
 
 .project-video {
-  flex: 1 1 45%;
+  position: relative;
+  width: 100%;
   aspect-ratio: 16/9;
-  
+  flex: 1 1 45%;
 }
 
 .project-video iframe {
   width: 100%;
-  height: 250px;
+  height: 100%;
   border-radius: 8px;
 }
 
