@@ -2,8 +2,10 @@
     {
         "id": "flints-hints",
         "title": "Flint's Hints",
-        "shortDescription": "Flint's Hints is a point-and-click puzzle game where you investigate your surroundings to appease your fussy pet cat, Flint. Search for hints in this escape-room-like adventure to figure out what he wants and how to give it to him. As you explore the space, some of the items you encounter may seem a bit mysterious. It's up to you how for you want to pull on these threads…",
-        "longDescription": "",
+        "releaseDate": "07/26/2024",
+        "developer": "Scaredy Cat Studios",
+        "genres": [ "Point-and-Click", "Puzzle", "Psychological Horror" ],
+        "shortDescription": "Flint's Hints is a point-and-click puzzle game inspired by escape room mechanics. You are directly presented with the prompt to explore the house and fulfill 3 requests made by your pet cat, Flint. You must use context clues in the environment to determine what the requests are and how to fulfill them. Along the way, you may uncover other clues seemingly unrelated to your tasks. It is up to you whether you want to investigate further or not.",
         "coverImage": "flints-hints.png",
         "embedUrl": "https://www.youtube.com/embed/woL9EnXDgIk",
         "projectLink": "https://store.steampowered.com/app/2660130/Flints_Hints/"
@@ -11,10 +13,33 @@
     {
         "id": "pick-your-poison",
         "title": "Pick Your Poison",
+        "releaseDate": "07/26/2025",
+        "developer": "Scaredy Cat Studios",
+        "genres": [ "Point-and-Click", "Strategy", "Chance" ],
         "shortDescription": "A point-and-click game that balances strategy and chance as you face off against an ominous bartender gambling for your life. Take turns drinking from potentially poisoned glasses while trying to sabotage your opponent.",
-        "longDescription": "",
         "coverImage": "pick-your-poison.png",
         "embedUrl": "https://www.youtube.com/embed/JYQoSm9O0k0",
         "projectLink": "https://store.steampowered.com/app/3575810/Pick_Your_Poison/"
+    },
+        {
+        "id": "giving-a-duck",
+        "title": "The Subtle Art of Giving a Duck",
+        "releaseDate": "06/11/2025",
+        "developer": "Game-Flavored Jam",
+        "genres": [ "Puzzle Platformer", "Co-op Multiplayer" ],
+        "shortDescription": "Work together to platform your way through the mountain, giving up your precious abilities to those who need them so that you all may come to a better place.",
+        "coverImage": "giving-a-duck.png",
+        "projectLink": "https://thescaredycat.itch.io/giving-a-duck"
+    },
+    {
+        "id": "the-boys",
+        "title": "The Boys",
+        "releaseDate": "05/11/2023",
+        "developer": "Christian Cook",
+        "genres": [ "Puzzle", "Horror" ],
+        "shortDescription": "Your friends challenge you to stay at the creepy old house at the edge of town. It's been abandoned for decades, but many suspect that horrible spirits linger inside. Armed with nothing but your flashlight and your wits, will you face the trials inside? Can you overcome the obstacles in your way? Are you brave enough to face 'The Boys'?",
+        "coverImage": "pick-your-poison.png",
+        "embedUrl": "https://www.youtube.com/embed/JYQoSm9O0k0",
+        "projectLink": "https://thescaredycat.itch.io/the-boys"
     }
 ]

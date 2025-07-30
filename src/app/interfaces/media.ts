@@ -1,8 +1,11 @@
 export interface Project {
     id: string,
     title: string,
+    releaseDate: Date,
+    developer: string,
+    genres: string[],
+    
     shortDescription: string,
-    longDescription: string,
     coverImage: string,
     embedUrl: string
     projectLink: string
