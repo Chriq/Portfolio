@@ -19,8 +19,6 @@ export class ResumeComponent {
       let blobUrl = window.URL.createObjectURL(blob);
       this.createDownloadAnchor(blobUrl);
     });
-
-    
   }
 
   createDownloadAnchor(url) {
