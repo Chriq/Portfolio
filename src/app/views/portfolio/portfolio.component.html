@@ -1,7 +1,7 @@
 @if (projects) {
   <div class="portfolio-container">
     @for (project of projects; track project; let i = $index) {
-      <mat-divider></mat-divider>
+      @if (i !== 0) { <mat-divider></mat-divider> }
       <div class="project-card" [ngClass]="{ 'reverse': i % 2 !== 0 }" (click)="navigateTo(project.id);">
         <div class="project-image">
           <img [src]="project.coverImage" alt="{{ project.title }}" (click)="navigateTo(project.id);"/>

@@ -5,6 +5,7 @@ import { Project } from '../../interfaces/media';
 import { SafeUrlPipe } from '../../pipes/safe-url.pipe';
 import { CommonModule } from '@angular/common';
 import { FlintsHintsComponent } from './flints-hints/flints-hints.component';
+import { PickYourPoisonComponent } from './pick-your-poison/pick-your-poison.component';
 
 @Component({
   selector: 'app-project-view',
@@ -35,6 +36,9 @@ export class ProjectViewComponent implements OnInit {
       switch(id) {
         case "flints-hints":
           componentRef = FlintsHintsComponent;
+          break;
+        case "pick-your-poison":
+          componentRef = PickYourPoisonComponent;
           break;
         default:
           componentRef = null;
