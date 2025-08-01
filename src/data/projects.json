@@ -1,5 +1,16 @@
 [
     {
+        "id": "pick-your-poison",
+        "title": "Pick Your Poison",
+        "releaseDate": "07/26/2025",
+        "developer": "Scaredy Cat Studios",
+        "genres": [ "Point-and-Click", "Strategy", "Chance" ],
+        "shortDescription": "A point-and-click game that balances strategy and chance as you face off against an ominous bartender gambling for your life. Take turns drinking from potentially poisoned glasses while trying to sabotage your opponent.",
+        "coverImage": "pick-your-poison.png",
+        "embedUrl": "https://www.youtube.com/embed/JYQoSm9O0k0",
+        "projectLink": "https://store.steampowered.com/app/3575810/Pick_Your_Poison/"
+    },
+    {
         "id": "flints-hints",
         "title": "Flint's Hints",
         "releaseDate": "07/26/2024",
@@ -11,17 +22,6 @@
         "projectLink": "https://store.steampowered.com/app/2660130/Flints_Hints/"
     },
     {
-        "id": "pick-your-poison",
-        "title": "Pick Your Poison",
-        "releaseDate": "07/26/2025",
-        "developer": "Scaredy Cat Studios",
-        "genres": [ "Point-and-Click", "Strategy", "Chance" ],
-        "shortDescription": "A point-and-click game that balances strategy and chance as you face off against an ominous bartender gambling for your life. Take turns drinking from potentially poisoned glasses while trying to sabotage your opponent.",
-        "coverImage": "pick-your-poison.png",
-        "embedUrl": "https://www.youtube.com/embed/JYQoSm9O0k0",
-        "projectLink": "https://store.steampowered.com/app/3575810/Pick_Your_Poison/"
-    },
-        {
         "id": "giving-a-duck",
         "title": "The Subtle Art of Giving a Duck",
         "releaseDate": "06/11/2025",
@@ -39,7 +39,6 @@
         "genres": [ "Puzzle", "Horror" ],
         "shortDescription": "Your friends challenge you to stay at the creepy old house at the edge of town. It's been abandoned for decades, but many suspect that horrible spirits linger inside. Armed with nothing but your flashlight and your wits, will you face the trials inside? Can you overcome the obstacles in your way? Are you brave enough to face 'The Boys'?",
         "coverImage": "the-boys.png",
-        "embedUrl": "https://www.youtube.com/embed/JYQoSm9O0k0",
         "projectLink": "https://thescaredycat.itch.io/the-boys"
     }
 ]
