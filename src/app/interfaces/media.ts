@@ -8,5 +8,6 @@ export interface Project {
     shortDescription: string,
     coverImage: string,
     embedUrl: string
-    projectLink: string
+    steamLink: string,
+    itchLink: string
 }

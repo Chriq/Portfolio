@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { GalleryItem, GalleryModule, ImageItem } from 'ng-gallery';
+import { Project } from '../../../interfaces/media';
 
 @Component({
   selector: 'app-pick-your-poison',
@@ -8,6 +9,8 @@ import { GalleryItem, GalleryModule, ImageItem } from 'ng-gallery';
   styleUrl: './pick-your-poison.component.scss'
 })
 export class PickYourPoisonComponent {
+  @Input() project: Project;
+  
   gallery: GalleryItem[] = [];
   
   ngOnInit() {
