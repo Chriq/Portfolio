@@ -3,11 +3,11 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import { Router } from '@angular/router';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule, MatSidenavModule, MatIconModule, MatToolbarModule],
+  imports: [MatSidenavModule, MatIconModule, MatToolbarModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

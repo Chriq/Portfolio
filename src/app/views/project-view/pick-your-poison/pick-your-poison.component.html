@@ -1,0 +1,49 @@
+<div class="project-body">
+    <h2>Building on Top of Simple Games</h2>
+    <p>
+        When brainstorming ideas for what would become Pick Your Poison, I was inspired by the incredible results games like <i>Buckshot Roulette</i> and <i>Balatro</i> had in building a compelling game loop on top of existing simple games. I wanted to experiment with this design approach, thinking through how I could add intrigue to various card games and tabletop games. The final idea actually came from <i>The Princess Bride</i> (and a bit from BBC <i>Sherlock</i>),  where Vizzini and Westley must choose a cup to drink from, not knowing which one is poisoned. This felt like a compelling premise for a game, so I ventured to explore the territory.
+    </p>
+    <p>
+        To get a strong sense of what the game loop would look like, I spent some time fleshing out a state machine for the various phases of the game. This would allow me to run through the game in my head to catch any weak spots early on, and give me a clear direction when writing the code. Working on this proved to be an indispensable step, and has shaped how I think about planning my future games.
+    </p>
+
+    <img src="pyp-gdd.png"/>
+
+    <h2>Balancing Strategy and Randomness</h2>
+    <p>
+        One of the core design challenges in creating Pick Your Poison was balancing the randomness of the poison distribution and available items with the feeling of strategy and agency I wanted to cultivate in the experience of playing. Making it too random would cease to feel like a game, but not having any randomness puts it at risk of being boring and predictable.
+    </p>
+    <p>
+        Over the course of several iterations and play-tests with friends, I found that the types of items available played a crucial role in guiding the experience of the game. In an early version of the game, there were 6 types of items instead of 4: the "Whiskey", which prevented the opponent from using an item on their next turn, and the "Duel", which challenged the opponent to a 50/50 choice between 2 glasses. After multiple rounds of play-testing, We found that these items derailed the flow of the game.
+    </p>
+    <p>
+        The "Whiskey" was only ever useful in a handful of specific circumstances, and mostly served to clog the players limited set of items, making it rather unpopular with play-testers. I found that removing this item actually enhanced the overall experience, curating the player's item set to universally useful abilities. The "Duel" item had a similar effect, though I felt it more appropriate to reuse the ability as a "Last Stand" in case of a tie between the Player and the Bartender.
+    </p>
+    <p>
+        The ultimate goal in curating the randomness vs. strategy space was to give players enough of a sense of agency over their playthrough that they would have fun deciding which items would come in handy at what time, while providing a level of risk that even optimal decision making could completely remove the tension. I felt that this balance would allow for a wide variety of experiences and help cultivate a feeling of luck: giving players immense satisfaction when they get good items, along with a challenge if they don't.
+    </p>
+
+    <div>
+        <gallery [items]="gallery" thumbs loop="true" thumbPosition="left" imageSize="cover"></gallery>
+    </div>
+
+    <h2>Exploring the Design Space</h2>
+    <p>
+        In addition to balancing the level of randomness, there were several key factors that shaped the gameplay experience of Pick Your Poison, primarily the number of total glasses / poisoned glasses, and the number of items.
+    </p>
+    <p>
+        I wanted Round 1 to feel fairly balanced where the strategy vs. chance dynamic felt tense, but ultimately fairly forgiving. I initially configured Round 1 with 8 glasses and a 50/50 split of poisoned/non-poisoned, and 4 items in the player's arsenal. Play-testers (including myself) seemed to enjoy this setup with a fair mix of wins and losses, and losses not feeling too demoralizing. People wanted to play again, which felt like a good sign.
+    </p>
+    <p>
+        Round 2 was a different story. I wanted to crank the tension in Round 2 to both serve the drama of the underlying story as well as build up the level of excitement coming out of Round 1. My initial thought on how to do this was to increase the number of items for more strategic opportunity, decrease lives for added stakes and tension, and reduce number of glasses to make each decision feel more impactful. The problem with this configuration was that rather than feeling more strategic and tense, it made the game more deterministic and demoralizing. 
+    </p>
+    <p>
+        With so few lives and glasses, there was no margin for error, and we found particularly that the "Antidote" item distribution would ultimately decide the winner. One play-tester in particular played for over an hour and could not win Round 2 because Mr. Luc would have an absurd number of Antidotes!
+    </p>
+    <p>
+        I had a few options for how to address this. My initial thought would be to limit the number of "Antidotes" to make it more fair, but that would encroach on the feeling of luck I wanted to maintain. Instead, I opted to raise the number of glasses, and reduce the proportion of poisoned ones. My thought was that I wanted to maintain the feeling of high stakes from having fewer lives, as well as the broader strategic opportunity from more items, but having more non-poisoned glasses on the table would give the player a greater chance of success even if the odds are stacked against them.
+    </p>
+    <p>
+        In subsequent tests, this proved to be far more popular and had a better distribution of wins/losses, while maintaining fun and engagement along the way.
+    </p>
+</div>
