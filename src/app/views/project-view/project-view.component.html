@@ -22,6 +22,16 @@
         <p class="short-description">{{ project.shortDescription }}</p>
       </div>
     </div>
+
+    <div class="links">
+      @if (project.steamLink) {
+        <a [href]="project.steamLink" target="_blank" rel="noopener noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/New_Steam_Logo_with_name.jpg"/></a>
+      }
+      @if (project.itchLink) {
+        <a [href]="project.itchLink" target="_blank" rel="noopener noreferrer"><img src="https://static.itch.io/images/badge.svg"/></a>
+      }
+    </div>
+
     <ng-container *ngComponentOutlet="projectComponent"></ng-container>
   </div>
 }

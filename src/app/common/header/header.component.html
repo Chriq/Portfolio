@@ -1,6 +1,15 @@
 <header class="header">
   <div class="title"(click)="navigateTo('portfolio');">Christian Cook - Game Developer</div>
 
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/christian-cook-dev/" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="LinkedIn Profile"/>
+    </a>
+    <a href="https://thescaredycat.itch.io/" target="_blank" rel="noopener noreferrer">
+      <img src="https://static.itch.io/images/itchio-textless-black.svg" alt="Itch.io Page"/>
+    </a>
+  </div>
+
   <nav class="nav-links">
     @for (item of menuOptions; track item) {
       <a (click)='navigateTo(item)'>{{item}}</a>
@@ -17,6 +26,15 @@
       @for (item of menuOptions; track item) {
         <a (click)="navigateTo(item); closeMenu()">{{item}}</a>
       }
+
+      <div class="social-links-overlay">
+        <a href="https://www.linkedin.com/in/christian-cook-dev/" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="LinkedIn Profile"/>
+        </a>
+        <a href="https://thescaredycat.itch.io/" target="_blank" rel="noopener noreferrer">
+          <img src="https://static.itch.io/images/itchio-textless-black.svg" alt="Itch.io Page"/>
+        </a>
+      </div>
     </div>
   </div>
 </header>
