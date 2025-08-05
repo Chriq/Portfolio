@@ -19,7 +19,7 @@ export class GivingADuckComponent {
     let NUM_SCREENSHOTS = 4;
 
     for(let i = 1; i <= NUM_SCREENSHOTS; i++) {
-      let imgPath = path + 'giving-a-duck (' + i + ').png';
+      let imgPath = path + 'giving-a-duck (' + i + ').jpg';
       this.gallery.push(new ImageItem({src: imgPath, thumb: imgPath}));
     }
   }
