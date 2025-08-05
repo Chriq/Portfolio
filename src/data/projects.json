@@ -6,7 +6,7 @@
         "developer": "Scaredy Cat Studios",
         "genres": [ "Point-and-Click", "Strategy", "Chance" ],
         "shortDescription": "A point-and-click game that balances strategy and chance as you face off against an ominous bartender gambling for your life. Take turns drinking from potentially poisoned glasses while trying to sabotage your opponent.",
-        "coverImage": "pick-your-poison.png",
+        "coverImage": "pick-your-poison.jpg",
         "embedUrl": "https://www.youtube.com/embed/JYQoSm9O0k0",
         "steamLink": "https://store.steampowered.com/app/3575810/Pick_Your_Poison/",
         "itchLink": "https://thescaredycat.itch.io/pick-your-poison"
@@ -18,7 +18,7 @@
         "developer": "Scaredy Cat Studios",
         "genres": [ "Point-and-Click", "Puzzle", "Psychological Horror" ],
         "shortDescription": "Flint's Hints is a point-and-click puzzle game inspired by escape room mechanics. You are directly presented with the prompt to explore the house and fulfill 3 requests made by your pet cat, Flint. You must use context clues in the environment to determine what the requests are and how to fulfill them. Along the way, you may uncover other clues seemingly unrelated to your tasks. It is up to you whether you want to investigate further or not.",
-        "coverImage": "flints-hints.png",
+        "coverImage": "flints-hints.jpg",
         "embedUrl": "https://www.youtube.com/embed/woL9EnXDgIk",
         "steamLink": "https://store.steampowered.com/app/2660130/Flints_Hints/",
         "itchLink": "https://thescaredycat.itch.io/flints-hints"
@@ -30,7 +30,7 @@
         "developer": "Game-Flavored Jam",
         "genres": [ "Puzzle Platformer", "Co-op Multiplayer" ],
         "shortDescription": "Work together to platform your way through the mountain, giving up your precious abilities to those who need them so that you all may come to a better place.",
-        "coverImage": "giving-a-duck.png",
+        "coverImage": "giving-a-duck.jpg",
         "itchLink": "https://thescaredycat.itch.io/giving-a-duck"
     },
     {
@@ -40,7 +40,7 @@
         "developer": "Christian Cook",
         "genres": [ "Puzzle", "Horror" ],
         "shortDescription": "Your friends challenge you to stay at the creepy old house at the edge of town. It's been abandoned for decades, but many suspect that horrible spirits linger inside. Armed with nothing but your flashlight and your wits, will you face the trials inside? Can you overcome the obstacles in your way? Are you brave enough to face 'The Boys'?",
-        "coverImage": "the-boys.png",
+        "coverImage": "the-boys.jpg",
         "itchLink": "https://thescaredycat.itch.io/the-boys"
     }
 ]

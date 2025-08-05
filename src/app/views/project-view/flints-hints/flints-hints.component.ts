@@ -18,8 +18,8 @@ export class FlintsHintsComponent implements OnInit {
   initGallery() {
     let path = "flints-hints-gallery/";
     this.gallery = [
-      new ImageItem({src: path + 'LivingRoom.png', thumb: path + 'LivingRoom.png'}),
-      new ImageItem({src: path + 'Bathroom.png', thumb: path + 'Bathroom.png'}),
+      new ImageItem({src: path + 'LivingRoom.jpg', thumb: path + 'LivingRoom.jpg'}),
+      new ImageItem({src: path + 'Bathroom.jpg', thumb: path + 'Bathroom.jpg'}),
     ]
   }
 }
