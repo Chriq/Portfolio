@@ -2,15 +2,18 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import  {MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
 @Component({
   selector: 'app-resume',
-  imports: [MatButtonModule, MatIconModule],
+  imports: [MatButtonModule, MatIconModule, NgxExtendedPdfViewerModule],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.scss'
 })
 export class ResumeComponent {
   constructor(private http: HttpClient) {}
+
+  showPdf = false;
 
   download() {
     let url = "Resume.pdf";

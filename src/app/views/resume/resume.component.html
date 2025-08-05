@@ -1,10 +1,25 @@
 <div>
-    <div style="position: relative;">
+    @if (showPdf) {
+
+    <div><ngx-extended-pdf-viewer src="Resume.pdf"></ngx-extended-pdf-viewer></div>
+
+    <div style="position: relative; padding-top: 18px;">
         <button class="mat-button" mat-raised-button (click)="download()">
             <mat-icon>download</mat-icon>
             <span>Download PDF</span>
         </button>
     </div>
+
+    } @else {
+
+   <div style="position: relative;">
+        <button class="mat-button" mat-raised-button (click)="download()">
+            <mat-icon>download</mat-icon>
+            <span>Download PDF</span>
+        </button>
+    </div>
+
+    
     
     <section>
         <h1>Profile</h1>
@@ -90,4 +105,14 @@
             <li>CS 4993: Independent Study - Procedural Generation of Foliage in Unity</li>
         </ul>
     </section>
+    }
+</div>
+
+<div style="position: absolute;">
+    <button class="mat-button" mat-raised-button (click)="showPdf = false;" style="width: 120px; left: 0px;">
+        <span>Option 1</span>
+    </button>
+    <button class="mat-button" mat-raised-button (click)="showPdf = true;" style="width: 120px; left: 150px;">
+        <span>Option 2</span>
+    </button>
 </div>
