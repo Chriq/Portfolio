@@ -82,6 +82,7 @@
 .social-links {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 16px;
   margin-left: auto;
   margin-right: 32px;
@@ -99,6 +100,7 @@
 .social-links-overlay {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 16px;
   margin-left: auto;
 }
@@ -112,7 +114,7 @@
 }
 
 /* Responsive styles */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .nav-links {
     display: none;
   }

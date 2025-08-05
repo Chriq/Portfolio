@@ -13,8 +13,6 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 export class ResumeComponent {
   constructor(private http: HttpClient) {}
 
-  showPdf = false;
-
   download() {
     let url = "Resume.pdf";
     this.http.get(url, { responseType: 'blob'}).subscribe((response) => {
