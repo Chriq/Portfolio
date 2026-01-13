@@ -1,0 +1,23 @@
+<div style="margin-bottom: 64px;">
+    <div>
+        <h2 style="text-align: center;">Featured Tracks</h2>
+        <div class="music-container">
+            @for (track of featuredTracks; track $index) {
+                <app-music-track [track]="track"></app-music-track>
+            }
+        </div>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div class="filter-display">
+        <h3>Know what you're looking for?</h3>
+        <h4>Filter by mood to find relevant tracks</h4>
+        <app-filter [filters]="tags" (selectedTags)="updateDisplayedTracks($event)"></app-filter>
+    </div>
+    <div class="music-container">
+        @for (track of displayedTracks; track $index) {
+            <app-music-track [track]="track"></app-music-track>
+        }
+    </div>
+</div>

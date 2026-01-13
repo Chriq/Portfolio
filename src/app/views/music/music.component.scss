@@ -1,0 +1,15 @@
+.music-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.filter-display {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+mat-divider {
+    margin-bottom: 64px;
+    margin-top: 64px;
+}

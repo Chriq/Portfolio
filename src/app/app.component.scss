@@ -1,6 +1,51 @@
 .outlet-container {
     width: 90%;
     max-width: 1000px;
-    margin: 2rem auto;
+    margin: 1rem auto;
     padding-bottom: 2rem;;
+}
+
+.sc-button {
+  background: transparent;
+  color: var(--sc-text-primary);
+  border: 1px solid var(--sc-border-strong);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--sc-radius-md);
+  font-family: var(--sc-font-body);
+  cursor: pointer;
+  transition:
+    border-color var(--sc-transition-fast),
+    color var(--sc-transition-fast);
+}
+
+.sc-button:hover {
+  border-color: var(--sc-accent);
+  color: var(--sc-accent);
+}
+
+.sc-card {
+  background: var(--sc-bg-secondary);
+  border: 1px solid var(--sc-border-subtle);
+  border-radius: var(--sc-radius-lg);
+  padding: 1.5rem;
+}
+
+.sc-divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--sc-accent-muted),
+    transparent
+  );
+  margin: 3rem 0;
+}
+
+.mat-mdc-button {
+  font-family: var(--sc-font-body);
+}
+
+.mat-mdc-card {
+  background-color: var(--sc-bg-secondary);
+  color: var(--sc-text-primary);
 }

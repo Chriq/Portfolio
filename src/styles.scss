@@ -16,134 +16,90 @@
 // Be sure that you only ever include this mixin once!
 //@include mat.core();
 
-// Define the theme object.
-$portfolio-theme: mat.define-theme((
-  color: (
-    theme-type: light,
-    primary: mat.$azure-palette,
-    tertiary: mat.$blue-palette,
-  ),
-  density: (
-    scale: 0,
-  )
-));
-
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
 :root {
-  @include mat.all-component-themes($portfolio-theme);
+  /* Backgrounds */
+  --sc-bg-primary: #0E1320;      /* Midnight Blue */
+  --sc-bg-secondary: #221A2E;    /* Deep Aubergine */
+  --sc-bg-elevated: #2C2F44;     /* Night Fog */
+
+  /* Text */
+  --sc-text-primary: #E8E3D8;    /* Warm Bone */
+  --sc-text-secondary: #A9A4B8;  /* Muted Ash */
+  --sc-text-inverse: #0E1320;
+
+  /* Accent */
+  --sc-accent: #C6B27C;          /* Desaturated Brass */
+  --sc-accent-muted: rgba(198, 178, 124, 0.4);
+
+  /* Borders */
+  --sc-border-subtle: rgba(232, 227, 216, 0.08);
+  --sc-border-strong: rgba(232, 227, 216, 0.16);
+
+  /* Typography */
+  --sc-font-heading: 'Libre Baskerville', serif;
+  --sc-font-body: 'Inter', system-ui, sans-serif;
+
+  /* Motion */
+  --sc-transition-fast: 120ms ease;
+  --sc-transition-medium: 240ms ease;
+
+  /* Layout */
+  --sc-radius-sm: 4px;
+  --sc-radius-md: 8px;
+  --sc-radius-lg: 16px;
+
+  @include mat.select-overrides((
+    panel-background-color: var(--sc-bg-primary),
+    enabled-trigger-text-color: var(--sc-text-primary),
+  ));
 }
 
-// Comment out the line below if you want to use the pre-defined typography utility classes.
-// For more information: https://material.angular.io/guide/typography#using-typography-styles-in-your-application.
-// @include mat.typography-hierarchy($portfolio-theme);
-
-
-
-$md-primary: (
-    50 : #fee6fe,
-    100 : #fcbffd,
-    200 : #fa95fb,
-    300 : #f76bf9,
-    400 : #f64bf8,
-    500 : #f42bf7,
-    600 : #f326f6,
-    700 : #f120f5,
-    800 : #ef1af3,
-    900 : #ec10f1,
-    A100 : #ffffff,
-    A200 : #feebff,
-    A400 : #fdb8ff,
-    A700 : #fc9eff,
-    contrast: (
-        50 : #000000,
-        100 : #000000,
-        200 : #000000,
-        300 : #000000,
-        400 : #000000,
-        500 : #ffffff,
-        600 : #ffffff,
-        700 : #ffffff,
-        800 : #ffffff,
-        900 : #ffffff,
-        A100 : #000000,
-        A200 : #000000,
-        A400 : #000000,
-        A700 : #000000,
-    )
-);
-
-
-$md-secondary: (
-    50 : #f6e1ff,
-    100 : #eab3ff,
-    200 : #dc80ff,
-    300 : #cd4dff,
-    400 : #c327ff,
-    500 : #b801ff,
-    600 : #b101ff,
-    700 : #a801ff,
-    800 : #a001ff,
-    900 : #9100ff,
-    A100 : #ffffff,
-    A200 : #f9f2ff,
-    A400 : #e0bfff,
-    A700 : #d4a6ff,
-    contrast: (
-        50 : #000000,
-        100 : #000000,
-        200 : #000000,
-        300 : #000000,
-        400 : #ffffff,
-        500 : #ffffff,
-        600 : #ffffff,
-        700 : #ffffff,
-        800 : #ffffff,
-        900 : #ffffff,
-        A100 : #000000,
-        A200 : #000000,
-        A400 : #000000,
-        A700 : #000000,
-    )
-);
-
-//GLOBAL
-
-$my-primary: mat.m2-define-palette($md-primary, 500);
-$my-secondary: mat.m2-define-palette($md-secondary, 500);
-$my-theme: mat.m2-define-light-theme((
- color: (
-   primary: $my-primary,
-   accent: $my-secondary,
- )
-));
-@include mat.all-component-themes($my-theme);
-
-$color-config: mat.m2-get-color-config($my-theme);
-$primary-palette: map.get($color-config, 'primary');
-$accent-palette: map.get($color-config, 'accent');
-$primary: mat.get-theme-color($my-theme, 'primary', 500);
-$secondary: mat.get-theme-color($my-theme, 'accent', 500);
-$light-secondary: mat.get-theme-color($my-theme, 'accent', 300);
-$light-primary: mat.get-theme-color($my-theme, 'primary', 300);
-
-//PALETTE BASICS
-$light-grey: rgb(228, 228, 228);
-$grey: #252525;
-$secondary-text: #525252;
-$black: rgb(20, 20, 20);
-
-
-:root {
-  --primary: #{$primary};
-  --secondary: #{$secondary};
-  --light-secondary: #{$light-secondary};
-  --light-primary: #{$light-primary};
-  --light-grey: #{$light-grey};
-  --grey: #{$grey};
-  --secondary-text: #{$secondary-text};
-  --black: #{$black};
-}
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+  margin: 0; 
+  background-color: var(--sc-bg-primary);
+  color: var(--sc-text-primary);
+  font-family: var(--sc-font-body);
+
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+}
+
+a {
+  color: var(--sc-accent);
+  text-decoration: none;
+  transition: color var(--sc-transition-fast);
+}
+
+a:hover {
+  color: var(--sc-text-primary);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--sc-font-heading);
+  color: var(--sc-text-primary);
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+p {
+  line-height: 1.7;
+  color: var(--sc-text-secondary);
+  max-width: 65ch;
+}
+
+/* Set the background color for all mat-select panels */
+.mat-select-panel {
+  background-color: white !important; /* Or any color you prefer, use !important for highest specificity */
+}
+
+/* Also ensure the options themselves are not transparent */
+.mat-option {
+  background-color: white !important;
+}

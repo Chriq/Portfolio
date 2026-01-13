@@ -1,10 +1,31 @@
+.hero {
+  padding: 2rem 2rem;
+  text-align: center;
+  background: radial-gradient(
+    circle at top,
+    rgba(198, 178, 124, 0.05),
+    transparent 60%
+  );
+  background-color: var(--sc-bg-secondary);
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+  box-shadow: 5px 5px 15px 0px #000000;
+}
+
+.hero p {
+  margin: 1rem auto 2.5rem;
+}
+
+
+
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #333;
-  color: white;
   position: relative;
+
+  background-color: var(--sc-bg-secondary);
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
 }
 
 .title {
@@ -23,7 +44,7 @@
 .nav-links a {
   padding-bottom: 1rem;
   padding-top: 1rem;
-  color: white;
+  color: var(--sc-text-primary);
   text-decoration: none;
 }
 
@@ -45,7 +66,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.95);
+  background-color: var(--sc-bg-primary);;
   overflow-x: hidden;
   transition: 0.4s;
   z-index: 1000;
@@ -64,7 +85,7 @@
 
 .overlay-content a {
   display: block;
-  color: white;
+  color: var(--sc-text-primary);
   font-size: 2rem;
   padding: 1rem;
   text-decoration: none;
@@ -75,7 +96,7 @@
   top: 1rem;
   right: 2rem;
   font-size: 3rem;
-  color: white;
+  color: var(--sc-text-primary);
   cursor: pointer;
 }
 
@@ -114,7 +135,7 @@
 }
 
 /* Responsive styles */
-@media (max-width: 900px) {
+
   .nav-links {
     display: none;
   }
@@ -122,9 +143,13 @@
   .hamburger {
     display: block;
     margin: 8px;
+
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    font-size: 64px;
   }
 
   .social-links {
     display: none;
   }
-}

@@ -1,0 +1,13 @@
+.hero {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: radial-gradient(
+    circle at top,
+    rgba(198, 178, 124, 0.05),
+    transparent 60%
+  );
+}
+
+.hero p {
+  margin: 1rem auto 2.5rem;
+}

@@ -1,0 +1,84 @@
+[
+    {
+        "title": "The Black Swan",
+        "releaseDate": "10-20-2025",
+        "description": "Climactic confrontation that transforms from elegant ballet-inspired drama into unhinged orchestral rock",
+        "longDescription": "A two-phase boss theme inspired by classical ballet and late-Romantic orchestral writing. The first half presents a lush, Tchaikovsky-inspired motif before the music fractures into an unhinged orchestral rock opera, driven by electric guitar, synths, and percussion",
+        "featured": true,
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=90027594/size=small/bgcol=0E1320/linkcol=ffffff/artwork=none/track=2275779146/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/scaredy-cat-singles",
+        "tags": [
+            "Chaotic",
+            "Bombastic",
+            "Dramatic"
+        ],
+        "styles": [
+            "Orchestral",
+            "Hybrid"
+        ]
+    },
+    {
+        "title": "Fates Adrift",
+        "releaseDate": "12-15-2025",
+        "description": "Dark, restrained orchestral tension for a dramatic narrative climax",
+        "longDescription": "A dark, restrained orchestral cue built around a driving Alberti bass. Designed for a dramatic narrative climax, balancing forward momentum with emotional weight",
+        "featured": true,
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=4150832915/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=614820853/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/the-boys-osteaser",
+        "tags": [
+            "Tense",
+            "Dark",
+            "Dramatic"
+        ],
+        "styles": [
+            "Orchestral"
+        ]
+    },
+    {
+        "title": "Into the Laboratory",
+        "releaseDate": "12-08-2025",
+        "description": "Synthwave horror cue for exploring an abandoned laboratory",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=90027594/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=1885778596/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/scaredy-cat-singles",
+        "tags": [
+            "Tense",
+            "Dark",
+            "Mysterious"
+        ],
+        "styles": [
+            "Electronic"
+        ]
+    },
+    {
+        "title": "Gelida Village",
+        "releaseDate": "10-27-2025",
+        "description": "Cue for an icy mountain village where the people are kind and peaceful, and guard the ancient temple to the wind deity",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=90027594/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=1885778596/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/scaredy-cat-singles",
+        "tags": [
+            "Melancholic",
+            "Reflective",
+            "Hopeful"
+        ],
+        "styles": [
+            "Orchestral",
+            "Chamber"
+        ]
+    },
+    {
+        "title": "Shady Shopkeeper",
+        "releaseDate": "11-03-2025",
+        "description": "Theme for a quirky shopkeeper who sells suspicious potions of unknown effect",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=90027594/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=2823162038/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/scaredy-cat-singles",
+        "tags": [
+            "Playful",
+            "Warm",
+            "Mysterious"
+        ],
+        "styles": [
+            "Orchestral",
+            "Chamber"
+        ]
+    }
+]

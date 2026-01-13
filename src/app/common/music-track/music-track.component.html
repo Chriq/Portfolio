@@ -1,0 +1,17 @@
+@if(track) {
+    <div class="track-card">
+        <div class="card-header">
+            <h3>{{track.title}}</h3>
+
+            <iframe style="border: 0; width: 42px; height: 42px;" 
+                [src]="track.embedUrl | safeUrl"
+                seamless>
+                <a href={{track.bancampHref}}>Scaredy Cat Singles by Scaredy Cat</a>
+            </iframe>
+        </div>
+
+        <span>{{track.description}}</span>
+        <div style="margin-top: auto;">Moods: <i>{{ track.tags?.join(' · ')}}</i></div>
+        <div style="margin-top: auto;">Styles: <i>{{ track.styles?.join(' · ')}}</i></div>
+    </div>
+}

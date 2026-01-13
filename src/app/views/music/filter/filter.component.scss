@@ -1,0 +1,15 @@
+/* Style for the panel background */
+.my-custom-panel {
+  background-color: #424242; /* Your desired color for the panel */
+}
+
+/* Style for individual options */
+.my-custom-panel .mat-mdc-option {
+  background-color: #424242; /* Ensures consistent option background */
+  color: white; /* Adjust text color for contrast */
+}
+
+/* Style for the selected/hovered option state */
+.my-custom-panel .mat-mdc-option.mat-selected:not(.mat-option-multiple) .mat-pseudo-checkbox-full {
+    background-color: #ff4081 !important; /* Example accent color for the checkbox */
+}
