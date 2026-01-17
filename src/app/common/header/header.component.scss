@@ -44,8 +44,6 @@
 .nav-links a {
   padding-bottom: 1rem;
   padding-top: 1rem;
-  color: var(--sc-text-primary);
-  text-decoration: none;
 }
 
 .nav-links a:hover {
@@ -85,10 +83,9 @@
 
 .overlay-content a {
   display: block;
-  color: var(--sc-text-primary);
   font-size: 2rem;
   padding: 1rem;
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .close-btn {
@@ -131,25 +128,29 @@
   max-width: 100%;
   height: auto;
   display: block;
-  filter: invert(1);
+  filter: brightness(0) saturate(100%) invert(97%) sepia(50%) saturate(1081%) hue-rotate(319deg) brightness(84%) contrast(81%);
+}
+
+.social-links-overlay img:hover {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(8%) saturate(230%) hue-rotate(3deg) brightness(98%) contrast(98%);
 }
 
 /* Responsive styles */
 
-  .nav-links {
-    display: none;
-  }
+.nav-links {
+  display: none;
+}
 
-  .hamburger {
-    display: block;
-    margin: 8px;
+.hamburger {
+  display: block;
+  margin: 8px;
 
-    position: absolute;
-    top: 32px;
-    right: 32px;
-    font-size: 64px;
-  }
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  font-size: 64px;
+}
 
-  .social-links {
-    display: none;
-  }
+.social-links {
+  display: none;
+}

@@ -4,6 +4,14 @@
     gap: 20px;
 }
 
+@media (max-width: 1100px) {
+  .music-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+}
+
 .filter-display {
     text-align: center;
     margin-bottom: 64px;
@@ -12,4 +20,20 @@
 mat-divider {
     margin-bottom: 64px;
     margin-top: 64px;
+}
+
+.bandcamp {
+    display: flex;
+    align-items: center;
+    img {
+        filter: brightness(0) saturate(100%) invert(97%) sepia(50%) saturate(1081%) hue-rotate(319deg) brightness(84%) contrast(81%);
+        text-decoration: none;
+        transition: color var(--sc-transition-fast);
+    }
+}
+
+.bandcamp:hover {
+    img {
+        filter: brightness(0) saturate(100%) invert(90%) sepia(8%) saturate(230%) hue-rotate(3deg) brightness(98%) contrast(98%);
+    }
 }
