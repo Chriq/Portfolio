@@ -80,5 +80,51 @@
             "Orchestral",
             "Chamber"
         ]
+    },
+    {
+        "title": "A Minor Theft",
+        "releaseDate": "01-05-2026",
+        "description": "A jazz interpretation of a classical violin piece",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=1366982949/size=small/bgcol=333333/linkcol=ffffff/artwork=none/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/track/a-minor-theft",
+        "tags": [
+            "Playful"
+        ],
+        "styles": [
+            "Jazz"
+        ]
+    },
+    {
+        "title": "Realistic Expectations",
+        "releaseDate": "01-30-2026",
+        "description": "A love-letter to musical theater depicting dialogue between 3 characters caught in a web of conspiracy and deception",
+        "featured": true,
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=3082332043/size=small/bgcol=333333/linkcol=ffffff/artwork=none/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/track/realistic-expectations",
+        "tags": [
+            "Playful",
+            "Dark",
+            "Chaotic"
+        ],
+        "styles": [
+            "Orchestral"
+        ]
+    },
+    {
+        "title": "The Boys (Title Theme)",
+        "releaseDate": "12-15-2025",
+        "description": "Title theme for a dark, story-rich game (See Fates Adrift)",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=4150832915/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=1448955696/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/the-boys-osteaser",
+        "tags": [
+            "Dark",
+            "Mysterious",
+            "Reflective"
+        ],
+        "styles": [
+            "Piano",
+            "Orchestral",
+            "Hybrid"
+        ]
     }
 ]

@@ -1,7 +1,7 @@
 @if(track) {
     <div class="track-card">
         <div class="card-header">
-            <h3>{{track.title}}</h3>
+            <h3><a href="{{track.bancampHref}}" target="_blank" rel="noopener noreferrer">{{track.title}}</a></h3>
 
             <iframe style="border: 0; width: 42px; height: 42px;" 
                 [src]="track.embedUrl | safeUrl"

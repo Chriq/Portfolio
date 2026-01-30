@@ -28,7 +28,7 @@ export class MusicComponent {
   ngOnInit() {
     this.musicService.loadAllTracks().subscribe((result) => {
       this.allTracks = result;
-      this.displayedTracks = result;
+      this.updateDisplayedTracks([]);
       this.featuredTracks = result.filter((track) => { return track.featured });
       this.buildTagsList(result);
     });
@@ -46,16 +46,21 @@ export class MusicComponent {
   }
 
   updateDisplayedTracks(selectedTags: string[]) {
-    if(selectedTags.length === 0) {
-      this.displayedTracks = this.allTracks;
-      return;
+    let tracks = this.allTracks;
+    if(selectedTags.length > 0) {
+      tracks = this.allTracks
+      .filter((track) => {
+        return selectedTags.some((selected) => {
+          return track.tags.some((trackTag) => trackTag === selected);
+        });
+      })
     }
 
-    this.displayedTracks = this.allTracks.filter((track) => {
-      let hasTag: boolean = false;
-      return selectedTags.some((selected) => {
-        return track.tags.some((trackTag) => trackTag === selected);
-      });
-    })
+    this.displayedTracks = tracks.sort((track1, track2) => {
+      let t1 = new Date(track1.releaseDate).getTime();
+      let t2 = new Date(track2.releaseDate).getTime();
+
+      return t2 - t1;
+    });
   }
 }
