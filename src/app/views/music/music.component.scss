@@ -2,24 +2,38 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    justify-items: center;
 }
 
 @media (max-width: 1100px) {
-  .music-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    .music-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 }
+
+@media (max-width: 740px) {
+    .music-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
 }
 
 .filter-display {
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
+
+    app-filter {
+        display: inline-grid;
+        width: 350px;
+    }
 }
 
 mat-divider {
-    margin-bottom: 64px;
-    margin-top: 64px;
+    margin-bottom: 48px;
+    margin-top: 32px;
 }
 
 .bandcamp {
