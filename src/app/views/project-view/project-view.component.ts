@@ -25,7 +25,7 @@ export class ProjectViewComponent implements OnInit {
     projectComponent;
 
     ngOnInit() {
-      let id = this.router.url.replace("/portfolio/", "");
+      let id = this.router.url.replace("/games/", "");
       this.projectService.getProjectById(id).subscribe((response) => {
         this.project = response;
         this.projectComponent = this.loadComponent(this.project.id);

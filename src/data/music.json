@@ -22,7 +22,7 @@
         "releaseDate": "12-15-2025",
         "description": "Dark, restrained orchestral tension for a dramatic narrative climax",
         "longDescription": "A dark, restrained orchestral cue built around a driving Alberti bass. Designed for a dramatic narrative climax, balancing forward momentum with emotional weight",
-        "featured": true,
+        "featured": false,
         "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=4150832915/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=614820853/transparent=true/",
         "bancampHref": "https://thescaredycat.bandcamp.com/album/the-boys-osteaser",
         "tags": [
@@ -125,6 +125,38 @@
             "Piano",
             "Orchestral",
             "Hybrid"
+        ]
+    },
+    {
+        "title": "Revival of Memories",
+        "releaseDate": "02-16-2026",
+        "description": "Reinterpretation of an older orchestral work for a tight chamber ensemble.",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=3578059240/size=small/bgcol=333333/linkcol=ffffff/artwork=none/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/scaredy-cat-singles-vol-2",
+        "tags": [
+            "Playful",
+            "Warm",
+            "Hopeful"
+        ],
+        "styles": [
+            "Orchestral",
+            "Chamber"
+        ]
+    },
+    {
+        "title": "Fates Decided",
+        "releaseDate": "03-07-2026",
+        "description": "Escape sequence that depicts characters running out of a burning building before it crumbles around them.  (Counterpart to Fates Adrift)",
+        "featured": true,
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=4150832915/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=450045759/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/the-boys-osteaser",
+        "tags": [
+            "Tense",
+            "Dark",
+            "Chaotic"
+        ],
+        "styles": [
+            "Orchestral"
         ]
     }
 ]

@@ -26,6 +26,9 @@ export class HeaderComponent {
 
   menuOptions: string[] = [
     "Home",
+    "Music",
+    "Games",
+    "About",
     "Contact"
   ];
 
