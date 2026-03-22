@@ -24,7 +24,7 @@
 
   /* Text */
   --sc-text-primary: #E8E3D8;    /* Warm Bone */
-  --sc-text-secondary: #A9A4B8;  /* Muted Ash */
+  --sc-text-secondary: #d2cbe4;  /* Muted Ash */
   --sc-text-inverse: #0E1320;
 
   /* Accent */
@@ -102,4 +102,33 @@ p {
 /* Also ensure the options themselves are not transparent */
 .mat-option {
   background-color: white !important;
+}
+
+.sc-button {
+  background: var(--sc-bg-secondary);
+  color: var(--sc-text-primary);
+  border: 1px solid var(--sc-border-strong);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--sc-radius-md);
+  font-family: var(--sc-font-body);
+  cursor: pointer;
+  transition:
+    border-color var(--sc-transition-fast),
+    color var(--sc-transition-fast);
+  
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  font-size: large;
+}
+
+.sc-button:not(:disabled):hover {
+  border-color: var(--sc-accent);
+  color: var(--sc-accent);
+}
+
+.sc-button:disabled {
+  background: var(--sc-bg-elevated);
+  cursor: default;
 }

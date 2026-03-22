@@ -5,10 +5,11 @@ import { PortfolioComponent } from './views/portfolio/portfolio.component';
 import { ProjectViewComponent } from './views/project-view/project-view.component';
 import { ResumeComponent } from './views/resume/resume.component';
 import { HomeComponent } from './views/home/home.component';
+import { MusicComponent } from './views/music/music.component';
 
 export const routes: Routes = [
     {path: '', redirectTo: "home", pathMatch: "full"},
-    {path: 'music', redirectTo: "home", pathMatch: "full"},
+    {path: 'music', component: MusicComponent},
     {path: 'home', component: HomeComponent},
     {path: 'games', component: PortfolioComponent},
     {path: 'resume', component: ResumeComponent},
