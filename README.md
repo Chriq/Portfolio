@@ -1,4 +1,4 @@
-# Christian Cook - Game Developer
+# Christian Cook - Scaredy Cat Studios
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
 
