@@ -17,18 +17,16 @@
 //@include mat.core();
 
 :root {
-  /* Backgrounds */
-  --sc-bg-primary: #0E1320;      /* Midnight Blue */
-  --sc-bg-secondary: #221A2E;    /* Deep Aubergine */
-  --sc-bg-elevated: #2C2F44;     /* Night Fog */
+  --sc-bg-primary: #0E1320;
+  --sc-bg-secondary: #221A2E;
+  --sc-bg-elevated: #2C2F44;
 
-  /* Text */
-  --sc-text-primary: #E8E3D8;    /* Warm Bone */
-  --sc-text-secondary: #d2cbe4;  /* Muted Ash */
+  --sc-text-primary: #E8E3D8;
+  --sc-text-secondary: #f1eee7;
+  --sc-text-muted: #ccc7d9;
   --sc-text-inverse: #0E1320;
 
-  /* Accent */
-  --sc-accent: #C6B27C;          /* Desaturated Brass */
+  --sc-accent: #C6B27C;
   --sc-accent-muted: rgba(198, 178, 124, 0.4);
 
   /* Borders */
@@ -47,6 +45,9 @@
   --sc-radius-sm: 4px;
   --sc-radius-md: 8px;
   --sc-radius-lg: 16px;
+
+  --header-size: clamp(1.5rem, 4vw, 4rem);
+  --sub-header-size: clamp(1rem, 2vw, 2rem);
 
   @include mat.select-overrides((
     panel-background-color: var(--sc-bg-primary),
@@ -81,11 +82,11 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: var(--header-size);
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: var(--sub-header-size);
 }
 
 p {

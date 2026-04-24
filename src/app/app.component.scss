@@ -1,11 +1,21 @@
 .outlet-container {
     width: 90%;
     max-width: 1000px;
-    margin: 1rem auto;
+    margin: 1rem auto auto;
     padding-bottom: 2rem;;
 }
 
+app-footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 999;
+}
 
+.root-container {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
 
 .sc-card {
   background: var(--sc-bg-secondary);

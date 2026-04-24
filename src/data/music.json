@@ -158,5 +158,39 @@
         "styles": [
             "Orchestral"
         ]
+    },
+    {
+        "title": "Exploring the Lab",
+        "releaseDate": "04-06-2026",
+        "description": "Ambiance for exploring the first area in a tense, mysterious laboratory you've been abducted to for unknown reasons.",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=4150832915/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=1086737668/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/the-boys-osteaser",
+        "tags": [
+            "Tense",
+            "Dark",
+            "Mysterious"
+        ],
+        "styles": [
+            "Orchestral",
+            "Chamber",
+            "Hybrid"
+        ]
+    },
+    {
+        "title": "Reflection",
+        "releaseDate": "04-06-2026",
+        "description": "Theme for recovering after a highly emotional experience. Despite the voices telling you to give up, you must persist.",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=4150832915/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=2514311720/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/the-boys-osteaser",
+        "tags": [
+            "Warm",
+            "Dark",
+            "Reflective"
+        ],
+        "styles": [
+            "Orchestral",
+            "Chamber",
+            "Hybrid"
+        ]
     }
 ]

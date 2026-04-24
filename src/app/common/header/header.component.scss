@@ -15,49 +15,12 @@
   margin: 1rem auto 2.5rem;
 }
 
-
-
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-
-  background-color: var(--sc-bg-secondary);
-  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
-}
-
 .title {
   width: fit-content;
   cursor: pointer;
   justify-self: center;
 }
 
-.nav-links {
-  display: flex;
-  gap: 1rem;
-  cursor: pointer;
-  padding-right: 1rem;
-}
-
-.nav-links a {
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-}
-
-.nav-links a:hover {
-  text-decoration: underline;
-  text-underline-offset: 8px;
-}
-
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* Full-screen overlay menu */
 .overlay {
   height: 100%;
   width: 0;
@@ -72,20 +35,19 @@
 
 .overlay.open {
   width: 100%;
+  align-content: center;
 }
 
 .overlay-content {
-  position: absolute;
-  top: 30%;
   width: 100%;
   text-align: center;
-}
 
-.overlay-content a {
-  display: block;
-  font-size: 2rem;
-  padding: 1rem;
-  cursor: pointer;
+  a {
+    display: block;
+    font-size: 2.5rem;
+    padding: 1rem;
+    cursor: pointer;
+  }
 }
 
 .close-btn {
@@ -97,68 +59,34 @@
   cursor: pointer;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  margin-left: auto;
-  margin-right: 32px;
-}
-
-.social-links img {
-  width: 28px;
-  max-width: 100%;
-  height: auto;
+app-social-links {
+  max-width: 400px;
   display: block;
-  filter: invert(1);
-}
-
-
-.social-links-overlay {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  margin-left: auto;
 }
 
-.social-links-overlay img {
-  width: 64px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  filter: brightness(0) saturate(100%) invert(97%) sepia(50%) saturate(1081%) hue-rotate(319deg) brightness(84%) contrast(81%);
-}
-
-.social-links-overlay img:hover {
-  filter: brightness(0) saturate(100%) invert(90%) sepia(8%) saturate(230%) hue-rotate(3deg) brightness(98%) contrast(98%);
-}
-
-/* Responsive styles */
-
-.nav-links {
-  display: none;
+.hamburger-container {
+  flex: 1; 
+  container-type: inline-size; 
+  align-content: start;
+  padding-right: 32px;
 }
 
 .hamburger {
-  display: block;
-  margin: 8px;
-
-  position: absolute;
-  top: 0px;
-  right: 0px;
+  text-align: end;
   font-size: 64px;
+  cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
     .hamburger {
-        font-size: 48px;
+        font-size: 100cqi;
         top: 2px;
     }
-}
 
-.social-links {
-  display: none;
+    .hamburger-container {
+      padding-right: 16px;
+    }
 }

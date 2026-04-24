@@ -1,87 +1,27 @@
-<!-- <header class="header">
-  <div class="title"(click)="navigateTo('portfolio');">Christian Cook - Game Developer</div>
-
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/christian-cook-dev/" target="_blank" rel="noopener noreferrer">
-      <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="LinkedIn Profile"/>
-    </a>
-    <a href="https://thescaredycat.itch.io/" target="_blank" rel="noopener noreferrer">
-      <img src="https://static.itch.io/images/itchio-textless-black.svg" alt="Itch.io Page"/>
-    </a>
-    <a href="https://github.com/Chriq" target="_blank" rel="noopener noreferrer">
-      <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="Github Page"/>
-    </a>
-  </div>
-
-  <nav class="nav-links">
-    @for (item of menuOptions; track item) {
-      <a (click)='navigateTo(item)'>{{item}}</a>
-    }
-  </nav>
-
-  <div class="hamburger" (click)="toggleMenu()">
-    &#9776;
-  </div>
-
-  <div class="overlay" [class.open]="menuOpen">
-    <a (click)="closeMenu()" class="close-btn">&times;</a>
-    <div class="overlay-content">
-      @for (item of menuOptions; track item) {
-        <a (click)="navigateTo(item); closeMenu()">{{item}}</a>
-      }
-
-      <div class="social-links-overlay">
-        <a href="https://www.linkedin.com/in/christian-cook-dev/" target="_blank" rel="noopener noreferrer">
-          <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="LinkedIn Profile"/>
-        </a>
-        <a href="https://thescaredycat.itch.io/" target="_blank" rel="noopener noreferrer">
-          <img src="https://static.itch.io/images/itchio-textless-black.svg" alt="Itch.io Page"/>
-        </a>
-        <a href="https://github.com/Chriq" target="_blank" rel="noopener noreferrer">
-          <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="Github Page"/>
-        </a>
-      </div>
-    </div>
-  </div>
-</header> -->
-
-
 <section class="hero">
-  <!-- <h1 style="margin: 8px;">Scaredy Cat</h1>
-  <h2 style="margin: 8px;">By Christian Cook</h2>
-  <h3 style="margin: 24px;">Music & Interactive Sound for Games and Film</h3> -->
+  <div style="display: flex;">
+    <div style="flex: 1;"></div>
+    <div class="title" (click)="navigateTo('home')">
+      <h1 style="margin: 0px;">Christian Cook</h1>
+      <h2 style="margin: 0px;">Of Scaredy Cat Studios</h2>
+      <h3 style="margin: 12px 0 0 0; font-style: italic;">Dark, with a Bit of Whimsy</h3>
+    </div>
 
-  <div class="title" (click)="navigateTo('home')">
-    <h1 style="margin: 8px;">Christian Cook</h1>
-    <h2 style="margin: 8px;">Of Scaredy Cat Studios</h2>
-    <h3 style="margin-top: 24px; font-style: italic;">Dark, with a Bit of Whimsy</h3>
-  </div>
-
-  <div class="hamburger" (click)="toggleMenu()">
-    &#9776;
-  </div>
-
-  <div class="overlay" [class.open]="menuOpen">
-    <a (click)="closeMenu()" class="close-btn">&times;</a>
-    <div class="overlay-content">
-      @for (item of menuOptions; track item) {
-        <a (click)="navigateTo(item); closeMenu()">{{item}}</a>
-      }
-
-      <div class="social-links-overlay">
-        <a href="https://www.linkedin.com/in/christian-cook-dev/" target="_blank" rel="noopener noreferrer">
-          <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="LinkedIn Profile"/>
-        </a>
-        <a href="https://thescaredycat.itch.io/" target="_blank" rel="noopener noreferrer">
-          <img src="https://static.itch.io/images/itchio-textless-black.svg" alt="Itch.io Page"/>
-        </a>
-        <a href="https://github.com/Chriq" target="_blank" rel="noopener noreferrer">
-          <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="Github Page"/>
-        </a>
-        <a href="https://thescaredycat.bandcamp.com/" target="_blank" rel="noopener noreferrer" style="text-align: -webkit-center; scale: 1.5;">
-          <img src="https://img.icons8.com/?size=100&id=97727&format=png&color=000000" alt="Bandcamp"/>
-        </a>
+    <div class="hamburger-container">
+      <div class="hamburger" (click)="toggleMenu()">
+        &#9776;
       </div>
     </div>
   </div>
 </section>
+
+<div class="overlay" [class.open]="menuOpen">
+  <a (click)="closeMenu()" class="close-btn">&times;</a>
+  <div class="overlay-content">
+    @for (item of menuOptions; track item) {
+      <a (click)="navigateTo(item); closeMenu()"><b>{{item}}</b></a>
+    }
+
+    <app-social-links></app-social-links>
+  </div>
+</div>

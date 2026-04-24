@@ -16,7 +16,8 @@
       <div class="project-text">
         <h1>{{project.title}}</h1>
         <div class="info-text">
-          <div><i>{{ project.developer }}</i>&nbsp;&middot;&nbsp;<i>{{ project.releaseDate | date }}</i></div>
+          <div><i>{{ project.developer }}</i></div>
+          <div><i>{{ project.releaseDate | date }}</i></div>
           <div><i>{{ project.genres?.join(', ')}}</i></div>
         </div>
         <p class="short-description">{{ project.shortDescription }}</p>
