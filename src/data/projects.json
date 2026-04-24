@@ -1,5 +1,16 @@
 [
     {
+        "id": "lost-and-found",
+        "title": "Lost & Found",
+        "releaseDate": "04/20/2026",
+        "developer": "Scaredy Cat, The Rogue Composer, Rocketfrank, neoNote, & buckstrom",
+        "genres": [ "Point-and-Click", "Adventure", "Puzzle" ],
+        "shortDescription": "The call to adventure awaits! You are a daring rescue pilot in a wonderous archipelago of unique and interesting islands. Intercept distress signals from stranded travelers, and use the clues they give to figure out where they are on the island. Pay close attention to what they say! You only have so much fuel and can't check everywhere...",
+        "coverImage": "lost-and-found.jpg",
+        "embedUrl": "https://www.youtube.com/embed/DGC3gB7Oxk8?si=UpMNeNbrbVFeNXhY",
+        "itchLink": "https://thescaredycat.itch.io/lost-and-found"
+    },
+    {
         "id": "pick-your-poison",
         "title": "Pick Your Poison",
         "releaseDate": "07/26/2025",

@@ -8,6 +8,7 @@ import { FlintsHintsComponent } from './flints-hints/flints-hints.component';
 import { PickYourPoisonComponent } from './pick-your-poison/pick-your-poison.component';
 import { GivingADuckComponent } from './giving-a-duck/giving-a-duck.component';
 import { TheBoysComponent } from './the-boys/the-boys.component';
+import { LostAndFoundComponent } from './lost-and-found/lost-and-found.component';
 
 @Component({
   selector: 'app-project-view',
@@ -25,7 +26,7 @@ export class ProjectViewComponent implements OnInit {
     projectComponent;
 
     ngOnInit() {
-      let id = this.router.url.replace("/portfolio/", "");
+      let id = this.router.url.replace("/games/", "");
       this.projectService.getProjectById(id).subscribe((response) => {
         this.project = response;
         this.projectComponent = this.loadComponent(this.project.id);
@@ -47,6 +48,9 @@ export class ProjectViewComponent implements OnInit {
           break;
         case "the-boys":
           componentRef = TheBoysComponent;
+          break;
+        case "lost-and-found":
+          componentRef = LostAndFoundComponent;
           break;
         default:
           componentRef = null;

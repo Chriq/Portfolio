@@ -31,7 +31,7 @@ export class PortfolioComponent implements OnInit {
   }
 
   navigateTo(route: string) {
-    this.router.navigate(['portfolio/', route]);
+    this.router.navigate(['games/', route]);
   }
   
 }

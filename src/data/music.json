@@ -1,0 +1,196 @@
+[
+    {
+        "title": "The Black Swan",
+        "releaseDate": "10-20-2025",
+        "description": "Climactic confrontation that transforms from elegant ballet-inspired drama into unhinged orchestral rock",
+        "longDescription": "A two-phase boss theme inspired by classical ballet and late-Romantic orchestral writing. The first half presents a lush, Tchaikovsky-inspired motif before the music fractures into an unhinged orchestral rock opera, driven by electric guitar, synths, and percussion",
+        "featured": true,
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=90027594/size=small/bgcol=0E1320/linkcol=ffffff/artwork=none/track=2275779146/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/scaredy-cat-singles",
+        "tags": [
+            "Tense",
+            "Dark",
+            "Chaotic"
+        ],
+        "styles": [
+            "Orchestral",
+            "Hybrid"
+        ]
+    },
+    {
+        "title": "Fates Adrift",
+        "releaseDate": "12-15-2025",
+        "description": "Dark, restrained orchestral tension for a dramatic narrative climax",
+        "longDescription": "A dark, restrained orchestral cue built around a driving Alberti bass. Designed for a dramatic narrative climax, balancing forward momentum with emotional weight",
+        "featured": false,
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=4150832915/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=614820853/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/the-boys-osteaser",
+        "tags": [
+            "Tense",
+            "Dark",
+            "Reflective"
+        ],
+        "styles": [
+            "Orchestral"
+        ]
+    },
+    {
+        "title": "Into the Laboratory",
+        "releaseDate": "12-08-2025",
+        "description": "Synthwave horror cue for exploring an abandoned laboratory",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=1907340018/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=346139618/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/scaredy-cat-singles",
+        "tags": [
+            "Tense",
+            "Dark",
+            "Mysterious"
+        ],
+        "styles": [
+            "Electronic"
+        ]
+    },
+    {
+        "title": "Gelida Village",
+        "releaseDate": "10-27-2025",
+        "description": "Cue for an icy mountain village where the people are kind and peaceful, and guard the ancient temple to the wind deity",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=90027594/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=1885778596/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/scaredy-cat-singles",
+        "tags": [
+            "Melancholic",
+            "Reflective",
+            "Hopeful"
+        ],
+        "styles": [
+            "Orchestral",
+            "Chamber"
+        ]
+    },
+    {
+        "title": "Shady Shopkeeper",
+        "releaseDate": "11-03-2025",
+        "description": "Theme for a quirky shopkeeper who sells suspicious potions of unknown effect",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=90027594/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=2823162038/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/scaredy-cat-singles",
+        "tags": [
+            "Playful",
+            "Warm",
+            "Mysterious"
+        ],
+        "styles": [
+            "Orchestral",
+            "Chamber"
+        ]
+    },
+    {
+        "title": "A Minor Theft",
+        "releaseDate": "01-05-2026",
+        "description": "A jazz interpretation of a classical violin piece",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=1366982949/size=small/bgcol=333333/linkcol=ffffff/artwork=none/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/track/a-minor-theft",
+        "tags": [
+            "Playful"
+        ],
+        "styles": [
+            "Jazz"
+        ]
+    },
+    {
+        "title": "Realistic Expectations",
+        "releaseDate": "01-30-2026",
+        "description": "A love-letter to musical theater depicting dialogue between 3 characters caught in a web of conspiracy and deception",
+        "featured": true,
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=3082332043/size=small/bgcol=333333/linkcol=ffffff/artwork=none/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/track/realistic-expectations",
+        "tags": [
+            "Playful",
+            "Dark",
+            "Chaotic"
+        ],
+        "styles": [
+            "Orchestral"
+        ]
+    },
+    {
+        "title": "The Boys (Title Theme)",
+        "releaseDate": "12-15-2025",
+        "description": "Title theme for a dark, story-rich game (See Fates Adrift)",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=4150832915/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=1448955696/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/the-boys-osteaser",
+        "tags": [
+            "Dark",
+            "Mysterious",
+            "Reflective"
+        ],
+        "styles": [
+            "Piano",
+            "Orchestral",
+            "Hybrid"
+        ]
+    },
+    {
+        "title": "Revival of Memories",
+        "releaseDate": "02-16-2026",
+        "description": "Reinterpretation of an older orchestral work for a tight chamber ensemble.",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=3578059240/size=small/bgcol=333333/linkcol=ffffff/artwork=none/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/scaredy-cat-singles-vol-2",
+        "tags": [
+            "Playful",
+            "Warm",
+            "Hopeful"
+        ],
+        "styles": [
+            "Orchestral",
+            "Chamber"
+        ]
+    },
+    {
+        "title": "Fates Decided",
+        "releaseDate": "03-07-2026",
+        "description": "Escape sequence that depicts characters running out of a burning building before it crumbles around them.  (Counterpart to Fates Adrift)",
+        "featured": true,
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=4150832915/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=450045759/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/the-boys-osteaser",
+        "tags": [
+            "Tense",
+            "Dark",
+            "Chaotic"
+        ],
+        "styles": [
+            "Orchestral"
+        ]
+    },
+    {
+        "title": "Exploring the Lab",
+        "releaseDate": "04-06-2026",
+        "description": "Ambiance for exploring the first area in a tense, mysterious laboratory you've been abducted to for unknown reasons.",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=4150832915/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=1086737668/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/the-boys-osteaser",
+        "tags": [
+            "Tense",
+            "Dark",
+            "Mysterious"
+        ],
+        "styles": [
+            "Orchestral",
+            "Chamber",
+            "Hybrid"
+        ]
+    },
+    {
+        "title": "Reflection",
+        "releaseDate": "04-06-2026",
+        "description": "Theme for recovering after a highly emotional experience. Despite the voices telling you to give up, you must persist.",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=4150832915/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=2514311720/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/the-boys-osteaser",
+        "tags": [
+            "Warm",
+            "Dark",
+            "Reflective"
+        ],
+        "styles": [
+            "Orchestral",
+            "Chamber",
+            "Hybrid"
+        ]
+    }
+]

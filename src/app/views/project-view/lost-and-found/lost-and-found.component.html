@@ -1,0 +1,156 @@
+<p>
+    For Lost & Found, I lead a team of 5 through Ludum Dare 59 with a theme of <i>Signals</i>, delivering a complete game in 72 hours.
+</p>
+<div class="summary">
+    <b>Role</b>
+    <div>Project Lead, Programmer</div>
+
+    <b>Team Size</b>
+    <div>5 (1 programmer, 2 artists, 1 composer, 1 writer)</div>
+
+    <b>Engine</b>
+    <div>Godot 4.6.2 .NET (C#)</div>
+
+    <b>Timeframe</b>
+    <div>72 Hours</div>
+
+    <b>Result</b>
+    <div>A finished and well polished game incorporating all aspects of the team's contributions</div>
+</div>
+
+<div class="screenshot-gallery">
+    <gallery [items]="screenshots" thumbs loop="true" thumbPosition="left" imageSize="cover" id="screenshots"></gallery>
+</div>
+
+<div class="project-body">
+    <h2>From Solo Dev to Project Lead</h2>
+    <p class="long-description">
+        The majority of my game development experience has been as a solo developer. Making games on your own is a fun and rewarding (and exhausting) experience, but it is also very "safe" in a way. When you're the only one with a vested interest in a project, the only one setting the definition of "success", the only one who would be disappointed if it doesn't get released, it's easy to let a project slip through your fingers. To let the jam clock count down without a working build. That all changed when you're leading a team.
+    </p>
+    <p class="long-description">
+        While I have worked on jams with other before, this was the first time I truly stepped up as Project Lead. It's a role that had me incredibly anxious, but also excited to work with my friends and colleagues, and see if I could inspire and bring the best out of them. Ultimately, my main priority, other than writing the code as the only Programmer, was to be of service to my team and ensure they had everything they needed to succeed.
+    </p>
+    <p class="long-description">
+        The first challenge I had to face was figuring out how much creative freedom vs. clear direction to give everyone. I tried to take a balanced approach, opening up discussion about ideas and vision for the game, while still guiding the conversation and making definitive decisions when I felt everyone fairly contributed their voice. This seemed to work well overall, but every individual engages differently. Some were very eager to have a collaborative discussion about where the game should go, others wanted a bit more direction on their role in executing. Learning to cater to both was a major point of growth for me. It forced me to develop a firm voice as a creator and director, and taught me so much about the process of making and shipping games in a team environment.
+    </p>
+    <p>
+        As much as I love solo development, and will continue to make games on my own as Scaredy Cat Studios, this experience has given me great confidence in my ability to take on the challenge and responsibility of leading others to delivering a product greater than any individual could make on their own. It is the unique combination of everyone's creative vision that lies at the heart of Lost & Found. I am very thankful for having had the privilege to work with such talented and driven individuals. As a courtesy, I've included links, images, and info they felt comfortable sharing publicly throughout this page.
+    </p>
+</div>
+
+<div class="project-body">
+    <h2>Collaborative Brainstorming</h2>
+
+    <div class="concept-gallery">
+        <gallery [items]="concepts" thumbs loop="true" thumbPosition="left" imageSize="cover" id="concepts"></gallery>
+    </div>
+
+    <p class="long-description">
+        We spent about the first 2-3 hours of the jam discussing what game we were going to make. Perhaps this is a bit long, but I felt it was best to leave everyone with a clear vision of what we were making, and have everyone feel that they contributed to the formation of that vision. So I tried to be thorough in guiding the session.
+    </p>
+    <p class="long-description">
+        The theme for Ludum Dare 59 was <i><b>Signals</b></i>, so we started off the night listing as many interpretations of using signals as we could. I budgeted about 20 minutes for ideating, and we put together a decent list with a mix of obvious and subtle interpretations. Some highlights include:
+    </p>
+
+    <ul>
+        <li>Audio/Music Signals</li>
+        <li>Radio Signals / Alien Communications</li>
+        <li>Dating / Romatic Signals</li>
+        <li>Traffic Signals</li>
+        <li>Signal vs. Noise</li>
+        <li>Distress / Smoke Signals</li>
+    </ul>
+    
+    <p>
+        Once we had a sizeable list of interpretations, I gave everyone another 20 minutes to use this list to write down as many game pitches as possible. I asked for just a list one 1-2 sentence pitches for a game concept, world, or loop. And in that time, the team got very creative! We ended with 15 game ideas, some overlapping on concept, but most were unique and interesting ideas. We looked through all the ideas together, eliminated the duplicates and any that seemed way too out of scope for 1 weekend, and voted on our favorites to get a list of 5 finalists:
+    </p>
+
+    <ul>
+        <li>You're a traffic controller managing a busy intersection. As the game goes on it gets crazier and crazier - planes, boats, etc</li>
+        <li>Cozy game listening for alien signals and you have to figure out whether it's actually aliens or some known phenomenon</li>
+        <li>Communicate with someone while your phone has poor signal. Walk around and explore to get more fragments of story.</li>
+        <li>You're stranded on an island and need to make a drawing in the sand to signal planes, but there's a timer until the wave rise and erase it, so you have to finish the signal before it runs out to be rescued</li>
+        <li>Dating sim where you have to figure out whether she's into you, not into you, or a spy</li>
+    </ul>
+
+    <p>
+        From here we had to narrow down to our final game idea. Everyone felt strongly about their favorite pitches, which made it difficult to narrow the list down further. I had to make difficult calls to cut certain ideas that felt infeasible in the time we had, and others made concessions that some ideas would be difficult the pull off tastefully. We combined the rest the rest of the ideas into a top 2 to discuss what gameplay would actually look like for each until we landed on reversing roles in the plane rescue idea, and everyone resonated with playing as the rescue pilot instead.
+    </p>
+
+    <p>
+        We had a lot of fun throughout the night discussing and pitching our ideas, but the team got really excited once we finally landed on our final game. We spent the rest of the night discussing what the core game loop would look like with  our artist, <i><a href="https://rocketfrank.itch.io/" target="_blank" rel="noopener noreferrer">Rocketfrank</a></i>, sending some concept sketches for me to work with. At that point, everyone was exhausted, so while the team went to bed, I got busy drafting a clear game loop diagram and mocking up a quick prototype.
+    </p>
+</div>
+
+<div class="project-body">
+    <h2>Designing the Core Loop</h2>
+
+    <img src="lost-and-found/game-loop.png"/>
+
+    <p class="long-description">
+        The team established the core premise of what we wanted the game to be on the first night, so I had a pretty good idea of the direction we were going in. I drafted a flow diagram of the logic and different screens we would need so that everyone would be on the same page as to how the game would flow in a complete loop. I also laid the foundational code to get a working mockup for everyone to try so the rest of the team could get a sense of the overall vision and funnel that into asset creation.
+    </p>
+
+    <p class="long-description">
+        At this point, we didn't have a firm grasp on how we were going to implement the island flyover, the core of the gamplay. We had established that you'd have a fixed amount of time to interpret a clue as to which region of the island the lost traveler was on, but not how we were going to separate/distinguish those regions. My initial pitch was to hand create individual islands on the art side and separate regions by different layers that I could stack as Texture Buttons. This would make the implementation easy, but put extra load on the artists to make each island from scratch. We were also unclear about what the regions were supposed to be, whether we'd go for more of a <i>biomes</i> approach, or more of a <i>themes</i> approach. By the end of Day 1, we had a functional prototype, but still some crucial questions to answer.
+    </p>
+
+    <p>
+        At the start of Day 2, I wanted to get firm answers to these lingering uncertainties. I reviewed the work everyone had already done, and together we established that we'd go for a biome/theme hybrid. We aimed to have 3 different islands as a feasible target and landed on the following themes:
+    </p>
+
+    <ul>
+        <li>Beachy / Tropical Paradise Island</li>
+        <li>Jungle / Ancient Ruins Island</li>
+        <li>Winter / Mt. Everest Island</li>
+    </ul>
+
+    <p>
+        Pursuing this with the original approach of custom designing each island individually I feared would become too much of a burden for our artist. Luckily, we had another artist express interest in joining us around this time, <i>neoNote</i>. This not only allowed us to divide up the asset creation, but also invited a new perspective for the island design. Instead of relying on the artists to hand design each island, we discussed doing a tile-based approach instead, so they could focus on making individual, reusable pieces. This turned out to be a great suggestion, as it allowed me to build out island variations in-engine much more quickly.
+    </p>
+
+    <p>
+        The final piece we needed to bring everything together was defining the regions, particularly making them distinct while adhering to island themes. For this, we decided to group tiles into categories: general tiles and themed tiles. The general tiles could be grouped into broader biomes like <i>grassland, lakes, beach, desert, etc.</i> and the themed tiles could be more detailed. This would allow me to put together islands with sensible biomes that could still be distinct from each other for clue creation.
+    </p>
+
+    <p>
+        Once we had all of these decisions in place, the game really started to take off.
+    </p>
+</div>
+
+<div class="project-body">
+    <h2>The Home Stretch</h2>
+
+    <p>
+        The final day was mostly asset creation and adding them in the game. I tried to have all core functionality finished by the previous night so that I could focus on adding juice and polish without stressing about game-breaking bugs (though it never actually works out that way, more on that later). By this point, the team was cranking out tiles, icons, music, sound effects, and everything else we needed. Everything was looking pretty solid, but of course, trouble always arises at the last minute.
+    </p>
+
+    <p>
+        We didn't have all the mission data (the people to save) in the game until near the end, so once I added it, I discovered a handful of bugs that weren't a problem with fewer missions. The tiles would stop being clickable, the game wouldn't end when everyone was rescued, the tiles were discoloring over the course of the game. It was a mess. Of course, these were all my problems to fix as the only developer, and I didn't weant to make the team nervous, so I did the best I could to project confidence. Still, it is nerve-wracking when everything breaks at the 11th hour, regardless of how many games you've made.
+    </p>
+
+    <p>
+        After a while of struggling with exports that didn't function the same as in-editor, as well as upload issues on the Ludum Dare website, we finally got to submit our working  game 1 minute before the deadline. Unfortunately, the one issue I couldn't fix in time was the tile discoloration. Because of how I implemented the hover effect, the tiles would drift in brightness over the course of the game, so by the last mission, they were either very bright or very dark. Of course, after revisiting it the next day for a post-mortem, I was able to fix the issue in 15 minutes, but the official Ludum Dare 59 submission has this glitch. It's disappointing, but I had to make the tough call to prioritize fixing the game-breaking bugs first, even if it meant the game wouldn't look perfect. 
+    </p>
+
+    <p>
+        All that said, Ludum Dare 59 was a resounding success for our team. Everyone had a blast, and despite the submission issues, I'm very proud of what we were able to make together. You can check out the game for yourself at the Itch.io link above. I hope you enjoyed hearing about the details making it, as well as my own journey in finding my voice as not only a game developer, but as a director and leader.
+    </p>
+</div>
+
+<h2 style="text-align: center;">Original Soundtrack by <BR>Jonathan Davies - The Rogue Composer</h2>
+<div class="ost">
+    <iframe width="100%" height="350" scrolling="no" frameborder="no"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2225482805&color=%23fed801&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+    </iframe>
+    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; 
+        font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+        <a href="https://soundcloud.com/theroguecomposer" title="Jonathan Davies" target="_blank" style="color: #cccccc; text-decoration: none;">
+            Jonathan Davies
+        </a> · 
+        <a href="https://soundcloud.com/theroguecomposer/sets/lost-and-found-original" title="Lost and Found - Original Soundtrack" target="_blank" 
+            style="color: #cccccc; text-decoration: none;">
+            Lost and Found - Original Soundtrack
+        </a>
+    </div>
+</div>

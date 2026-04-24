@@ -9,7 +9,17 @@ import { GalleryItem, GalleryModule, ImageItem } from 'ng-gallery';
   styleUrl: './flints-hints.component.scss'
 })
 export class FlintsHintsComponent implements OnInit {
-  gallery: GalleryItem[];
+  gallery: GalleryItem[] = [];
+
+  images = [
+    'LivingRoom',
+    'Kitchen',
+    'Bowl',
+    'Bedroom',
+    'Bathroom',
+    'FirstAid',
+    'Office'
+  ];
 
   ngOnInit() {
     this.initGallery();
@@ -17,9 +27,10 @@ export class FlintsHintsComponent implements OnInit {
 
   initGallery() {
     let path = "flints-hints-gallery/";
-    this.gallery = [
-      new ImageItem({src: path + 'LivingRoom.jpg', thumb: path + 'LivingRoom.jpg'}),
-      new ImageItem({src: path + 'Bathroom.jpg', thumb: path + 'Bathroom.jpg'}),
-    ]
+
+    for(let fileName of this.images) {
+      let img = path + fileName + '.jpg';
+      this.gallery.push(new ImageItem({src: img, thumb: img}));
+    }
   }
 }

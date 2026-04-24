@@ -1,0 +1,8 @@
+<mat-form-field>
+  <mat-label>Moods</mat-label>
+  <mat-select (selectionChange)="onMatSelectChange($event)" placeholder="All Moods" multiple panelClass="my-custom-panel">
+    @for (filter of filters; track filter) {
+      <mat-option [value]="filter">{{filter}}</mat-option>
+    }
+  </mat-select>
+</mat-form-field>

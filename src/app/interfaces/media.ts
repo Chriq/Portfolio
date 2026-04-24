@@ -11,3 +11,14 @@ export interface Project {
     steamLink: string,
     itchLink: string
 }
+
+export interface Track {
+    title: string,
+    description: string,
+    releaseDate: Date,
+    featured: boolean,
+    embedUrl: string,
+    bancampHref: string
+    tags: string[],
+    styles: string[]
+}

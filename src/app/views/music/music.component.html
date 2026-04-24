@@ -1,0 +1,35 @@
+<div>
+    <h2 style="text-align: center;">Music & Sound Design</h2>
+    <div>
+        <h3 style="text-align: center; margin-bottom: 32px;">Featured Tracks</h3>
+        <div class="music-container">
+            @for (track of featuredTracks; track $index) {
+                <app-music-track [track]="track"></app-music-track>
+            }
+        </div>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div class="filter-display">
+        <h3>Know what you're looking for?</h3>
+        <h4>Filter by mood to find relevant tracks</h4>
+        <app-filter [filters]="tags" (selectedTags)="updateDisplayedTracks($event)"></app-filter>
+    </div>
+    <div class="music-container">
+        @for (track of displayedTracks; track $index) {
+            <app-music-track [track]="track"></app-music-track>
+        }
+    </div>
+
+    <div style="display: flex;flex-flow: column;align-items: center; margin-top: 64px;">
+        <h3>Want to hear more?</h3>
+        <h4 style="margin: -18px;">
+            <a href="https://thescaredycat.bandcamp.com/" target="_blank" rel="noopener noreferrer" class="bandcamp">
+                <span>Check out my Bandcamp</span>
+                &nbsp;
+                <img src="https://img.icons8.com/?size=100&id=97727&format=png&color=000000" alt="Bandcamp" style="width: 80px;"/>
+            </a>
+        </h4>
+    </div>
+</div>
