@@ -11,6 +11,16 @@
         "itchLink": "https://thescaredycat.itch.io/lost-and-found"
     },
     {
+        "id": "garden-lost-in-time",
+        "title": "A Garden Lost in Time",
+        "releaseDate": "05/03/2026",
+        "developer": "Scaredy Cat, The Rogue Composer, Rocketfrank, Tom Duffy, & Kalibri",
+        "genres": [ "Cozy", "Farming Sim", "Point-and-Click" ],
+        "shortDescription": "Unlock new crops as you try to become the Ultimate Gardener. Play through a time loop, reliving the same Spring over and over, until you appease the (quite irate and judgy) Garden Spirit with your prowess for curating exquisite flora and fauna.",
+        "coverImage": "garden.gif",
+        "itchLink": "https://thescaredycat.itch.io/garden-lost-in-time"
+    },
+    {
         "id": "pick-your-poison",
         "title": "Pick Your Poison",
         "releaseDate": "07/26/2025",

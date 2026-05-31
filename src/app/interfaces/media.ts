@@ -17,6 +17,7 @@ export interface Track {
     description: string,
     releaseDate: Date,
     featured: boolean,
+    sortOrder: number,
     embedUrl: string,
     bancampHref: string
     tags: string[],
