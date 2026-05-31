@@ -9,6 +9,7 @@ import { PickYourPoisonComponent } from './pick-your-poison/pick-your-poison.com
 import { GivingADuckComponent } from './giving-a-duck/giving-a-duck.component';
 import { TheBoysComponent } from './the-boys/the-boys.component';
 import { LostAndFoundComponent } from './lost-and-found/lost-and-found.component';
+import { GardenComponent } from './garden/garden.component';
 
 @Component({
   selector: 'app-project-view',
@@ -51,6 +52,9 @@ export class ProjectViewComponent implements OnInit {
           break;
         case "lost-and-found":
           componentRef = LostAndFoundComponent;
+          break;
+        case "garden-lost-in-time":
+          componentRef = GardenComponent;
           break;
         default:
           componentRef = null;
