@@ -29,7 +29,7 @@ export class MusicComponent {
     this.musicService.loadAllTracks().subscribe((result) => {
       this.allTracks = result;
       this.updateDisplayedTracks([]);
-      this.featuredTracks = result.filter((track) => { return track.featured });
+      this.featuredTracks = result.filter((track) => { return track.featured }).sort((a, b) => { return a.sortOrder - b.sortOrder });
       this.buildTagsList(result);
     });
   }

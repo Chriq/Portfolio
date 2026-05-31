@@ -4,7 +4,6 @@
         "releaseDate": "10-20-2025",
         "description": "Climactic confrontation that transforms from elegant ballet-inspired drama into unhinged orchestral rock",
         "longDescription": "A two-phase boss theme inspired by classical ballet and late-Romantic orchestral writing. The first half presents a lush, Tchaikovsky-inspired motif before the music fractures into an unhinged orchestral rock opera, driven by electric guitar, synths, and percussion",
-        "featured": true,
         "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=90027594/size=small/bgcol=0E1320/linkcol=ffffff/artwork=none/track=2275779146/transparent=true/",
         "bancampHref": "https://thescaredycat.bandcamp.com/album/scaredy-cat-singles",
         "tags": [
@@ -99,6 +98,7 @@
         "releaseDate": "01-30-2026",
         "description": "A love-letter to musical theater depicting dialogue between 3 characters caught in a web of conspiracy and deception",
         "featured": true,
+        "sortOrder": 3,
         "embedUrl": "https://bandcamp.com/EmbeddedPlayer/track=3082332043/size=small/bgcol=333333/linkcol=ffffff/artwork=none/transparent=true/",
         "bancampHref": "https://thescaredycat.bandcamp.com/track/realistic-expectations",
         "tags": [
@@ -111,8 +111,8 @@
         ]
     },
     {
-        "title": "The Boys (Title Theme)",
-        "releaseDate": "12-15-2025",
+        "title": "Reflections of You (Title Theme)",
+        "releaseDate": "05-31-2026",
         "description": "Title theme for a dark, story-rich game (See Fates Adrift)",
         "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=4150832915/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=1448955696/transparent=true/",
         "bancampHref": "https://thescaredycat.bandcamp.com/album/the-boys-osteaser",
@@ -123,7 +123,7 @@
         ],
         "styles": [
             "Piano",
-            "Orchestral",
+            "Chamber",
             "Hybrid"
         ]
     },
@@ -148,6 +148,7 @@
         "releaseDate": "03-07-2026",
         "description": "Escape sequence that depicts characters running out of a burning building before it crumbles around them.  (Counterpart to Fates Adrift)",
         "featured": true,
+        "sortOrder": 1,
         "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=4150832915/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=450045759/transparent=true/",
         "bancampHref": "https://thescaredycat.bandcamp.com/album/the-boys-osteaser",
         "tags": [
@@ -191,6 +192,24 @@
             "Orchestral",
             "Chamber",
             "Hybrid"
+        ]
+    },
+    {
+        "title": "Mr. Luc's Shop",
+        "releaseDate": "04-07-2026",
+        "featured": true,
+        "sortOrder": 2,
+        "description": "Theme for a sneaky, devious, yet charming shopkeeper hell-bent on convincing you to sell him your soul.",
+        "embedUrl": "https://bandcamp.com/EmbeddedPlayer/album=3578059240/size=small/bgcol=333333/linkcol=ffffff/artwork=none/track=1894863408/transparent=true/",
+        "bancampHref": "https://thescaredycat.bandcamp.com/album/scaredy-cat-singles-vol-2",
+        "tags": [
+            "Dark",
+            "Mysterious",
+            "Chaotic"
+        ],
+        "styles": [
+            "Jazz",
+            "Chamber"
         ]
     }
 ]
