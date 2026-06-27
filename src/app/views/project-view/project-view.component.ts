@@ -10,6 +10,7 @@ import { GivingADuckComponent } from './giving-a-duck/giving-a-duck.component';
 import { TheBoysComponent } from './the-boys/the-boys.component';
 import { LostAndFoundComponent } from './lost-and-found/lost-and-found.component';
 import { GardenComponent } from './garden/garden.component';
+import { CastawaysComponent } from './castaways/castaways.component';
 
 @Component({
   selector: 'app-project-view',
@@ -55,6 +56,9 @@ export class ProjectViewComponent implements OnInit {
           break;
         case "garden-lost-in-time":
           componentRef = GardenComponent;
+          break;
+        case "last-call-at-castaways":
+          componentRef = CastawaysComponent;
           break;
         default:
           componentRef = null;

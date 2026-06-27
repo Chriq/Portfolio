@@ -1,5 +1,15 @@
 [
     {
+        "id": "last-call-at-castaways",
+        "title": "Last Call at Castaway's",
+        "releaseDate": "06/19/2026",
+        "developer": "Scaredy Cat, TheLazyDog, The Rogue Composer, Rocketfrank, Jaimie Pangan, Kalibri",
+        "genres": [ "Point-and-Click", "Cozy", "Narrative" ],
+        "shortDescription": "Start your first shift at Castaway's Beachside Bar, fielding requests from vacationers, partygoers, and more. Prepare summer cocktails in this lofi, 80's nostalgia cozy game, learning about making drinks and the people who order them along the way.",
+        "coverImage": "castaways.jpg",
+        "itchLink": "https://thescaredycat.itch.io/last-call-at-castaways"
+    },
+    {
         "id": "lost-and-found",
         "title": "Lost & Found",
         "releaseDate": "04/20/2026",
