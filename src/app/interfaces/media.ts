@@ -9,7 +9,17 @@ export interface Project {
     coverImage: string,
     embedUrl: string
     steamLink: string,
-    itchLink: string
+    itchLink: string,
+
+    summary: ProjectSummary
+}
+
+export interface ProjectSummary {
+    role: string,
+    teamSize: string,
+    engine: string,
+    timeframe: string,
+    result: string
 }
 
 export interface Track {

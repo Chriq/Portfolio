@@ -21,8 +21,8 @@
   --sc-bg-secondary: #221A2E;
   --sc-bg-elevated: #2C2F44;
 
-  --sc-text-primary: #E8E3D8;
-  --sc-text-secondary: #f1eee7;
+  --sc-text-primary: #f1eee7;
+  --sc-text-secondary: #E8E3D8;
   --sc-text-muted: #ccc7d9;
   --sc-text-inverse: #0E1320;
 
@@ -91,8 +91,13 @@ h2 {
 
 p {
   line-height: 1.7;
-  color: var(--sc-text-secondary);
   margin-bottom: 32px;
+}
+
+ul, li {
+  font-family: var(--sc-font-body);
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 /* Set the background color for all mat-select panels */

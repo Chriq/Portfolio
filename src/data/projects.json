@@ -1,34 +1,65 @@
 [
     {
-        "id": "last-call-at-castaways",
-        "title": "Last Call at Castaway's",
-        "releaseDate": "06/19/2026",
-        "developer": "Scaredy Cat, TheLazyDog, The Rogue Composer, Rocketfrank, Jaimie Pangan, Kalibri",
-        "genres": [ "Point-and-Click", "Cozy", "Narrative" ],
-        "shortDescription": "Start your first shift at Castaway's Beachside Bar, fielding requests from vacationers, partygoers, and more. Prepare summer cocktails in this lofi, 80's nostalgia cozy game, learning about making drinks and the people who order them along the way.",
-        "coverImage": "castaways.jpg",
-        "itchLink": "https://thescaredycat.itch.io/last-call-at-castaways"
+        "id": "cold-call",
+        "title": "Cold Call",
+        "releaseDate": "09/21/2026",
+        "developer": "Christian Cook, Jake Roberts, Jaimie Pangan, Jonathan Davies",
+        "genres": [ "Psychological Horror", "Puzzle", "Narrative-Driven" ],
+        "shortDescription": "Collect horrific creatures by solving puzzles in this unsettling story about Simon grieving for his slain family and taking vengeance on the monsters responsible.",
+        "coverImage": "cold-call/cover.png",
+        "itchLink": "https://thescaredycat.itch.io/cold-call",
+        "summary": {
+            "role": "Director, Programmer",
+            "teamSize": "4 (1 programmer, 1 artist, 1 composer, 1 sound designer)",
+            "engine": "Godot 4.7.2 .NET (C#)",
+            "timeframe": "1 month",
+            "result": "A cohesive narrative experience that creates an unsettling atmosphere and leverages gameplay as a storytelling device."
+        }
+    },
+    {
+        "id": "down-the-count",
+        "title": "Down the Count",
+        "releaseDate": "07/26/2026",
+        "developer": "Sarah Mak, Solomon, Natalie Wong, & Associates",
+        "genres": [ "Physics Sandbox, Destruction Sim" ],
+        "shortDescription": "Cause as much chaos as you possibly can before the timer runs out! Play as the disgruntled servant of Count Dawn during the annual vampire CountCon, and use your knowledge of vampire weaknesses to take them down.",
+        "coverImage": "down-the-count/cover.png",
+        "itchLink": "https://plasmak.itch.io/down-the-count",
+        "summary": {
+            "role": "AI Programmer",
+            "teamSize": "16 (5 programmers, 8 artists, 1 composer, 1 sound designer, 1 writer)",
+            "engine": "Unity 6000.3.11f1",
+            "timeframe": "96 Hours",
+            "result": "A fun, chaotic physics sim where the AI takes a prominent role in influencing the feel of gameplay"
+        }
     },
     {
         "id": "lost-and-found",
         "title": "Lost & Found",
         "releaseDate": "04/20/2026",
-        "developer": "Scaredy Cat, The Rogue Composer, Rocketfrank, neoNote, & buckstrom",
+        "developer": "Christian Cook, Franco Reviglio, Jonathan Davies, neoNote, & buckstrom",
         "genres": [ "Point-and-Click", "Adventure", "Puzzle" ],
         "shortDescription": "The call to adventure awaits! You are a daring rescue pilot in a wonderous archipelago of unique and interesting islands. Intercept distress signals from stranded travelers, and use the clues they give to figure out where they are on the island. Pay close attention to what they say! You only have so much fuel and can't check everywhere...",
         "coverImage": "lost-and-found.jpg",
         "embedUrl": "https://www.youtube.com/embed/DGC3gB7Oxk8?si=UpMNeNbrbVFeNXhY",
-        "itchLink": "https://thescaredycat.itch.io/lost-and-found"
+        "itchLink": "https://thescaredycat.itch.io/lost-and-found",
+        "summary": {
+            "role": "Project Lead, Programmer",
+            "teamSize": "5 (1 programmer, 2 artists, 1 composer, 1 writer)",
+            "engine": "Godot 4.6.2 .NET (C#)",
+            "timeframe": "72 Hours",
+            "result": "A finished and well polished game incorporating all aspects of the team's contributions"
+        }
     },
     {
-        "id": "garden-lost-in-time",
-        "title": "A Garden Lost in Time",
-        "releaseDate": "05/03/2026",
-        "developer": "Scaredy Cat, The Rogue Composer, Rocketfrank, Tom Duffy, & Kalibri",
-        "genres": [ "Cozy", "Farming Sim", "Point-and-Click" ],
-        "shortDescription": "Unlock new crops as you try to become the Ultimate Gardener. Play through a time loop, reliving the same Spring over and over, until you appease the (quite irate and judgy) Garden Spirit with your prowess for curating exquisite flora and fauna.",
-        "coverImage": "garden.gif",
-        "itchLink": "https://thescaredycat.itch.io/garden-lost-in-time"
+        "id": "giving-a-duck",
+        "title": "The Subtle Art of Giving a Duck",
+        "releaseDate": "06/11/2025",
+        "developer": "Game-Flavored Jam",
+        "genres": [ "Puzzle Platformer", "Co-op Multiplayer" ],
+        "shortDescription": "Work together to platform your way through the mountain, giving up your precious abilities to those who need them so that you all may come to a better place.",
+        "coverImage": "giving-a-duck.jpg",
+        "itchLink": "https://thescaredycat.itch.io/giving-a-duck"
     },
     {
         "id": "pick-your-poison",
@@ -53,16 +84,6 @@
         "embedUrl": "https://www.youtube.com/embed/woL9EnXDgIk",
         "steamLink": "https://store.steampowered.com/app/2660130/Flints_Hints/",
         "itchLink": "https://thescaredycat.itch.io/flints-hints"
-    },
-    {
-        "id": "giving-a-duck",
-        "title": "The Subtle Art of Giving a Duck",
-        "releaseDate": "06/11/2025",
-        "developer": "Game-Flavored Jam",
-        "genres": [ "Puzzle Platformer", "Co-op Multiplayer" ],
-        "shortDescription": "Work together to platform your way through the mountain, giving up your precious abilities to those who need them so that you all may come to a better place.",
-        "coverImage": "giving-a-duck.jpg",
-        "itchLink": "https://thescaredycat.itch.io/giving-a-duck"
     },
     {
         "id": "the-boys",
