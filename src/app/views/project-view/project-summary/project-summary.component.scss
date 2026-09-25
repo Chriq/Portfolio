@@ -1,0 +1,13 @@
+.summary {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 24px;
+
+    b {
+        margin: 8px 24px 8px 0;
+    }
+
+    div {
+        align-content: center;
+    }
+}

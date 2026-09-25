@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './social-links.component.scss'
 })
 export class SocialLinksComponent {
+  linkColor: string;
 
+  ngOnInit() {
+      const rootStyles = getComputedStyle(document.documentElement);
+      this.linkColor = rootStyles.getPropertyValue('--sc-accent').trim().replaceAll("#", "");
+  }
 }

@@ -33,6 +33,10 @@
       }
     </div>
 
+    @if(project.summary) {
+      <app-project-summary [summary]="project.summary"></app-project-summary>
+    }
+
     <ng-container *ngComponentOutlet="projectComponent"></ng-container>
   </div>
 }
