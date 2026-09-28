@@ -1,0 +1,31 @@
+<div class="project-body">
+    <h2>An Introduction to Game Design</h2>
+    <p>
+        <i>The Boys</i> was one of my earliest projects, and the first one I felt truly proud of when I finished. I made it for the <i>Themed Horror Jam #12</i> with the theme <i>Searing Light</i>. In the game, you must solve geometric puzzles by angling your flashlight against mirrors in the room, moving them into place to hit your target. Along the way, you will also encounter "the boys", shadow-monsters who chase you after solving every room until you escape by hiding in the closet.
+    </p>
+    <p>
+        I put a great deal of time and effort into the project and felt that it was a representation of my best work given my ability at the time. This experience was a foundational lesson for me because I received a lot of feedback on the game, all of which helped me discover gaps in my understanding of user experience, user interface, and game design principles.
+    </p>
+    <p>
+        One of the most common pain points in the game was player movement. My goal was to create a grid-based movement system along the lines of top-down RPG's like Pokémon. The purpose was to make designing geometric puzzles easier since the light source and the mirror blocks could only have fixed locations. However, I do think that this limited the design space in constricting players to a certain method of solving puzzles, and a free-form movement system would pose an interesting, but perhaps worthwhile design challenge.
+    </p>
+</div>
+
+<div class="project-body">
+    <h2>Learning How to Accept Player Feedback</h2>
+    <p>
+        In diagnosing the problems with player movement, I had some friends play-test the game. From this experience, I learned one of the most valuable lessons any designer can learn: all feedback can be useful. Sometimes, your inclination when getting feedback you don't agree with is to blame differing taste or visions for the result. There can be an element of truth in that, but ultimately, your job as the designer is to craft a curated experience for your users. Negative feedback, whether the self-diagnosed issue is actually the cause, indicates there is a problem.
+    </p>
+    <p>
+        A friend of mine had commented that the movement was "laggy". From a technical sense, this was blatantly untrue. The input devices were acceptably responsive and the framerate was stable. He elaborated that when he wanted to change direction, it took a while for the character to do so on screen. My initial reaction was: "Of course, movement is grid-based. You have to get to the next grid space before you change directions." And this was true, the game was technically functioning exactly as I had designed it to be. So this means I can ignore my friend's comment, right?
+    </p>
+    <p>
+        Well, no. Although my friend didn't have the technical vocabulary to define <i>what</i> the problem was, based on his, and many others' feedback, there was certainly a problem. Upon further research, I found that the culprit was my own lack of understanding of grid-based world design.
+    </p>
+    <p>
+        A typical 2D top-down game will use world tiles that are roughly half the height of the player character. This ratio ensures that the world can be designed on a tight grid, while not over-encumbering player movement. This was a detail that I did not know at the time. Rather than being half of the character's height, my tiles fully encapsulated the player character, making the time to traverse a single tile double what it should be. This was the "lag" that my friend was describing, making movement incredibly clunky and unresponsive relative to the RPG's I was trying to model.
+    </p>
+    <p>
+        I had 2 major takeaways from this experience. The first was that there is wisdom to be found anywhere, even when it may not seem like it on the surface. I had to look beyond the surface level description and learn to use feedback as a springboard for understanding how players engage with my games. The second was to do more research on how successful games implement mechanics when I am looking to model after them. Had I taken the time to revisit Pokémon, I would have had a much clearer idea of how to implement this style of movement.
+    </p>
+</div>

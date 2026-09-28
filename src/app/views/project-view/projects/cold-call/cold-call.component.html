@@ -1,0 +1,219 @@
+<div class="project-body">
+    <h2>Designing the Game</h2>
+    <p>
+        The initial game idea sparked from a conversation with my artist friend Frank, who has done several jams with us before but was unable to do this one. I told him the theme for the jam was <i>Frozen Heart</i>, and he made an offhand comment about the Ice King from Adventure Time. This made me think about how Simon Petrikov might make for a good inspiration for a psychological horror character, as the loss of identity, memory, and unreliable perception that he experiences is prime material for the genre. 
+    </p>
+    <p>
+        In thinking about what the gameplay could be like, I thought a simple creature collector like what the Gift Plane in <i>Petscop</i> is supposed to be could work. The creature capture mechanics are fairly simple puzzles that have underlying meaning to the narrative, so it seemed both relevant and simple enough to implement in the time we had. Combining these 2 ideas, I arrived at the initial pitch of having a character, who I also called Simon, starting as a kind and well-meaning family man whose perception is slowly warped as he encounters these horrific eldritch monsters and hunts them down by solving puzzles, only to realize at the end of the game that the creatures were his family members the whole time. While I didn't come up with the puzzle designs until a bit later, I knew I wanted the mechanics and interactions to feel benign at first, but take on new meaning once the truth was revealed.
+    </p>
+    <p>
+        This became the core of the game, highlighting Simon's decaying grip on reality and how it leads him to committing horrible atrocities. That became the filter for everything else. As I pitched this to everyone else, we worked out what the world would look like, what the puzzles might entail narrative wise, and ironed out some of the story details so everyone was on the same page about what we were making.
+    </p>
+</div>
+<div class="project-body">
+    <h2>Creating the Puzzles</h2>
+    <p><i>Spoiler Warning: This section reveals clues/solutions to the main puzzles of the game.</i></p>
+    <p>
+        The puzzles in <i>Petscop</i> are fairly simple, but for a 1-month game jam, I wanted ours to be even simpler. My goal was to limit the number of mechanics and get as much mileage as possible out of very few interactions. It's easy to come up with a new puzzle for a new mechanic, but much harder to think of creative ways to recombine mechanics you already have. From the start, there were 2 main things you could do: walk around the 2D top-down world and pick up/put down objects. I wanted to even avoid custom objects for each puzzle, as I felt that would trivialize them a bit more than I wanted. The process of coming up with the 3 we landed on got me breaking down just how many possibilities you can have with very limited inputs. I realized that even in simple 2D top-down movement, there are so many factors you can use to design around: character speed, angle of approach, obstacles in the way, and previous visited areas to name a few that came to mind.
+    </p>
+    <p>
+        This was especially important in designing the Hellhound's (Simon's pet dog's) puzzle. I wanted to do something with zones and jumping between them, but it was difficult thinking of things the player could do that weren't trivial to make the dog get to a certain spot. Once I created the above list, I played with the level layout to determine what the minimum complexity had to be to ensure an interesting combination of movements without overcomplicating it. The final puzzle relies on chasing the dog into the fire (the same condition for all encounters) by approaching from behind relative to the center of the area. I deliberately laid out the trees and spaces so that it would suggest to the player to chase the dog in a circle, which doesn't work, but still clearly showing openings behind each of the clearings to more subtly nod that you don't have to approach in a circle.
+    </p>
+    <div style="display: flex; flex-flow: column; gap: 32px;">
+        <div style="flex: 1;">
+            <h3 style="text-align: center;">Hellhound Encounter Design Sketch</h3>
+            <div>
+                <img src="cold-call/DogEncounterSketch.jpg" style="width: 40%; height: auto; display: block; place-self: center;"/>
+            </div>
+            <div style="font-style: italic; text-align: center; margin-top: 32px;">
+                <div>Notes: </div>
+                <div>Initially tried using 3 "jump zones", but found that it wasn't enough to generate interesting behavior, so used 4 instead.</div>
+
+                <div>Spawn Hellhound on top zone so players will likely encounter the "chase in a circle" behavior first to give them a red herring.</div>
+                <div>When a zone is blocked by fire, the Hellhound will jump over only if it "sees".</div>
+            </div>
+        </div>
+        <div style="flex: 2;">
+            <h3 style="text-align: center;">Hellhound Encounter</h3>
+            <div>
+                <img src="cold-call/DogEncounter.gif" style="width: 80%; height: auto; display: block; place-self: center;"/>
+            </div>
+        </div>
+    </div>
+    <p>
+        Immplementing this behavior was fairly straightforward. To capture the sense of getting spooked when the player approaches from behind, I used trigonometry to find the angle of approach between the player's position, the Hellhound's position, and the center of the encounter space. That way, when players approach from the fron/side, it rtiggers the chase behavior of jumping to the next space over, avoiding fires. But if the angle implies the player is approaching from behind, then the Hellhound gets startled and jumps to the opposite space, whether there is a fire there or not. This is the player's key to solving the puzzle.
+    </p>
+    <p>
+        Initially, I wanted the Hellhound puzzle to go first for story purposes, scaling up the intensity of Simon's crimes over time. But even though I was happy with how the puzzle felt to engage with, it was also a bit too complex to be the first puzzle of the game. I wanted something fairly simple to introduce players to the core loop of calming, capturing, and mounting the creature heads before adding complexity to the capture process itself. So for the Bloodsucker (Simon's young son's) puzzle, I took inspiration from an idea that came up in discussion with out artist. He mentioned how we could incorporate some child-like behavior into their puzzle. We workshopped some ideas and thought of how kids will chase each other around tables, and how that would be a good premise to build a puzzle around both mechanically and for story reasons. The idea was simple enough to introduce the main mechanics of the game that I felt compelled to put it first, even if it was less ideal for the narrative.
+    </p>
+    <div style="flex: 2;">
+            <h3 style="text-align: center;">Bloodsucker Encounter</h3>
+            <div>
+                <img src="cold-call/ChildEncounter.gif" style="width: 80%; height: auto; display: block; place-self: center;"/>
+            </div>
+        </div>
+    <!-- <p>
+        The final puzzle was confronting your wife as the Wendigo.
+    </p> -->
+    <p>
+        Overall, the puzzles are designed to convey the horrific actions you commit toward your family in the story, but are deliberately meant not to be threatening. In a game about actually challenging eldritch monsters, you would expect them to pose a serious threat. But since the underlying story is about brutal murder of innocent people, I felt that the beasts, as horrific as they are, should not feel like a real threat. This may be confusing at first, but that confusion serves the psychological horror when it is revealed why the monsters were never a threat.
+    </p>
+</div>
+<div class="project-body">
+    <h2>Evaluating Feedback</h2>
+    <p>
+        Feedback on the game was very positive with 5 ratings and 4 comments, one of which included a video playthrough. The various comments players left on Itch.io had kind things to say about the overall aesthetic of the game, as well as the interplay between gameplay and story. A common frustration I saw in the gameplay was that players often "solved" the puzzle and were doing the right thing, but the colliders I had set up to trigger the solve event were just a bit too small to pick up their actions. This made me realize that as I tested the game's functionality knowing where colliders were, I often went safely to the center of the trigger rather than thinking of where players might be tempted to try certain actions. Players aren't thinking about trigger zones and what their extents might be, so it's on me as the designer to make them as generous as feasibly possible without undermining the puzzle.
+    </p>
+</div>
+<div class="project-body">
+    <h2>From Facilitator to Director</h2>
+    <p>
+        Between April - August of 2026, I led my group of GDC friends and colleagues through 3 game jams. In my post about <i><a routerLink="/games/lost-and-found">Lost and Found</a></i>, I discussed the transition in mindset and responsibilities going from solo development to leading a team, as well as the measures I took to ensure everyone had a say in the game we were going to make. This was a worthy exercise for game jams and developing my skills in evaluating disparate ideas and feedback over the prior 3 games. However, I had been thinking about taking a different approach based on my goals and various conversations I had with trusted colleagues.
+    </p>
+    <p>
+        This team has shared a number of successes in working together on smaller projects, so my inclination by around August 2026 was that we could work together to build something larger, perhaps even something worth developing as a commercial product. In gathering advice on how to approach this with a close filmmaker friend, he advised that I ought to take on a stronger role in setting the creative vision for the game, and letting the team take ownership more through their domain expertise rather than initial ideation. This would put additional pressure on me and shine a much larger spotlight on my ideas and design expertise, but a number of trusted colleagues gave me similar advice. When the time came for this jam to start, I felt it was a challenge worth taking on.
+    </p>
+    <p>
+        The timing didn't work out for everyone to get on a call at the start of the jam to brainstorm ideas like we normally do, and individuals' availabilities were spread out over the following few days, so I felt prompted to at least put together a central core for a game to make and discuss ideas to build on that as I met with individuals. From the theme <i>Frozen Heart</i>, and inspiration from various conversations with friends, I wanted to create a narrative psychological horror game (as is my go-to genre) inspired from the story of the Ice King from <i>Adventure Time</i> and a bit of the twisted implications of the web-series <i>Petscop</i>. I created the below Game Design Document, and through conversations with each of the team members, refined the idea until it felt solid. It was exciting, because even though we didn't come up with the idea as a group, it still felt like something we created together due to the quality of everyone's contributions.
+    </p>
+    <p>
+        The point of this transition though, is that the buck did stop with me. It always did in all the games we made, but this time I wanted to really make sure everything that went in the game served the central vision and was feasible with the resources we had. For as many ideas that went into the game, there were also a lot that had to be cut for either a lack of fit or a lack of time. Making the call to make those cuts was never easy, especially when they came from the others and they seemed excited about it, but my priority is to make sure the game gets done and that it is cohesive. One of the hardest things about creative work is that sometimes that means killing your darlings. Sometimes it means sacrificing the perfect story flow so that the gameplay makes more sense, or telling the artist that there isn't enough time to make the scenic town overlook they were excited about and needed to prioritize UI assets instead, or even telling your friends and colleagues that there isn't enough room on the team for them in this jam. These are hard decisions to make, but they need to happen in order to keep moving forward.
+    </p>
+    <p>
+        In the end, everyone enjoyed their time working on the jam, and I was extremely happy with how the game turned out. It was absolutely a team effort, and it would not be nearly what it is now without the immense contributions of our artist and audio team. But this experience was highly formative for me as it truly felt like I was more than just the group organizer or the lead developer, but I felt like a <i>director</i>. I made creative decisions, I executed on a vision, and I did so while keeping in mind what was actually feasible. Even a year ago, I never could have imagined myself doing that, but I've proven to myself that I can, and I can't wait to do it more so I can continue learning how to make excellent games.
+    </p>
+</div>
+<!-- <div class="project-body">
+    <h2>Telling the Story</h2>
+    <p>
+        From the beginning
+    </p>
+</div> -->
+<div>
+    <h2>Game Design Document</h2>
+    <h3>Creative Vision</h3>
+    <ul>
+        <li>
+            A psychological horror creature collector game where you are led to believe that your actions are benign, but the more creatures you catch, the further into your grandiose delusions you fall, unaware of the harm you are causing
+        </li>
+    </ul>
+    <h4>Inspirations</h4>
+        <ul>
+        <li>
+            The story of the Ice King from Adventure Time, taking a kind, good-natured person and corrupting their perception/thoughts until they are unrecognizable
+        </li>
+        <li>
+            "Gameplay" and storytelling of Petscop, a simple puzzle-oriented creature collector where you explore a space and solve a puzzle in order to trap a creature and add them to your collection
+        </li>
+    </ul>
+
+    <h4>Design Pillars</h4>
+    <ul>
+        <li>Something doesn't feel right</li>
+        <li>Unreliable narrator/game</li>
+        <li>More than meets the eye</li>
+        <li>You didn't mean to do harm</li>
+        <li>Hiding from what you've done</li>
+    </ul>
+        
+    <h3>Story/Mechanics Summary</h3>
+
+    <h4>Setting</h4>
+    <ul>
+        <li>A 1 room cabin in the middle of a snowy forest</li>
+        <li>
+            You start the game by answering the telephone to hear your family being killed. You then go over to the fireplace and light it, introducing the main 2 mechanics.
+        </li>
+        <li>
+            Potential backstory (if time allows for explanation)
+            <ul>
+                <li>
+                    You discovered a cursed relic, and touching it angered ancient spirits/monsters, sending them to kill your wife and 2 kids
+                </li>
+            </ul>
+        </li>
+        <li>
+            You are hunting the cryptids/monsters, staking out their habitat in the woods (think Wendigo, bigfoot, yeti, mothman…)
+        </li>
+    </ul>
+ 
+    <h4>Mechanics/Gameplay</h4>
+    <ul>
+        <li>
+            You venture out and solve simple puzzles (or other TBD mechanic if better idea arises) to "capture" the monster and mount its head on the wall of your cabin
+            <ul>
+                <li>
+                    I think 3 "plot" monsters is a good number, though perhaps we can have minor encounters in between (fight normal deer, squirrels, need to chop trees for firewood, etc if we have time)
+                </li>
+            </ul>
+        </li>
+        <li>
+            Cabin has various objects with disturbing dialog
+            <ul>
+                <li>
+                    eg.) <i>As you stare into the eyes of your felled beast trophy, a strange sensation stirs in you. As if it's look is somehow… familiar…</i>
+                </li>
+            </ul>
+        </li>
+        <li>
+            Each head you mount changes the aesthetic of the game (shaders start glitching, furniture gets thrown over, blood splatters on the wall)
+        </li>
+        <li>
+            Place Objects in scene that interact with monsters in different ways
+        </li>
+    </ul>
+ 
+    <h4>Monsters</h4>
+    <ul>
+        <li>
+            Family Dog/Hellhound
+            <ul>
+                <li>Jumping?</li>
+                <li>Leap between zones, use angle of approach and placement of fire to determine win condition</li>
+                <li>Used to run into neighbor's yard and you'd have to sneak up on him</li>
+                <li>Used to snuggle by the fire, you have to push them in</li>
+            </ul>
+        </li>
+        <li>
+            Child/Mosquito
+            <ul>
+                <li>
+                    Chase around boulder/table?
+                    <ul>
+                        <li>
+                            Place lore clues that you used to play together and chase them and they run away until you place a fire down, and they stare at it and you can capture them
+                        </li>
+                        <li>Kitchen island, running around, make them run into fire</li>
+                    </ul>
+                </li>
+                <li>Loves smores, you promised that you'd make some at the cabin → get pacified by fire and you have to push him in</li>
+            </ul>
+        </li>
+        <li>
+            Wife/Wendigo
+            <ul>
+                <li>Human sacrifice, maybe member of family?</li>
+                <li>
+                    Need to place dead body on fire to "cook" it
+                    <ul>
+                        <li>References to cooking and pickiness with food</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+ 
+    <h4>Ending</h4>
+    <ul>
+        <li>
+            When you capture all 3 monsters, you realize that the monsters were actually a delusion, and it was actually your family that you killed all along
+        </li>
+    </ul>
+ 
+    <h3>Controls</h3>
+    <ul>
+        <li>2D top down controls (WASD, Joystick)</li>
+        <li>Interact (E, controller A)</li>
+        <li>Place Object (SPACE)</li>
+    </ul>
+</div>

@@ -1,0 +1,34 @@
+.screenshot-gallery {
+    width: 72%; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.concept-gallery {
+    // float: left;
+    // width: 70%;
+    // padding: 8px 24px 0 0;
+    flex: 3;
+    
+}
+
+gallery {
+    aspect-ratio: 22/10;
+    border-radius: var(--sc-radius-md);
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    line-height: 1.7;
+    // color: var(--sc-text-secondary);
+    margin-bottom: 32px;
+}
+
+.ost {
+    width: 72%; 
+    margin-left: auto; 
+    margin-right: auto;
+}

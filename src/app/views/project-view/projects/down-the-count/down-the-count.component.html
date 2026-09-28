@@ -1,0 +1,64 @@
+<div class="project-body">
+    <h2>Solidifying the Vision</h2>
+    <p>
+        On such a large team, there were a lot of ideas being thrown around when the theme of <i>Count Down</i> was announced. The team went through several rounds of discussion to narraow down what we wanted to do before landing on our core pitch:
+
+        <BR>
+        <i style="margin: 16px; display: block;">A comedic action game about a vampire count's servant who has decided to ruin their employer's count convention (CountCon) by downing vampires using vampire-specific methods and vandalising/destroying the venue.</i>
+
+        Given that our project manager was primarily a writer/narrative designer, we leaned into the story/aesthetic quite a bit from the beginning and built our gameplay around that. It took a few iterations of ideas, but we eventually landed on chaotic physics sim with a timer and chaos meter would be the best way to create the dymnamic we were looking for (at least under the time constraint we had).
+    </p>
+    <p>
+        From the start of the jam, my top priority was helping the group establish the core vision to serve as a guidepost for development. The overall tone and pace of the game needed to be firm for me to create enemies that would effectively counter the player's efforts. We decided to pursue chaos and destruction as the core dynamic, having the player run around a 3D environment breaking furniture and throwing objects at the vampires. 
+    </p>
+</div>
+
+<div class="project-body">
+    <h2>Counteracting Player Intention with AI Design</h2>
+    <p>
+        Since we decided to pursue chaos and destruction as the core dynamic, I needed to decide how I wanted the enemy AI to block the player's actions/motivations. We had the narrative element of surprised vampires having their fun time at the convention ruined, as well as the desire game feel of chaotic movement and abundant destruction. SoTO incentivize players to avoid the enemies and make them feel like a real threat to your mission, I needed to counter both of these incentives.
+    </p>
+    <p>
+        My approach was to give the enemies a number of behaviors to cycle between based on the game state and what they were aware of. I could then prioritize these behaviors on a per enemy level to give variety and help balance the gameplay once the final levels were built out. To counter the player's desire to move fast through the world to get to as many destructible objects as possible, enemies could chase and grab you to stop your momentum, and even throw you backward to make the interaction feel more alive and threatening. Then to counter the player's goal to fill their chaos meter, vampires could also clean up after you to revert your progress. This combination creates a positive feedback loop where you are incentivized to cause damage faster than the vampires can clean it up, but getting caught could reverse your progress. Ultimately, my goal in designing the AI was to incentivize what I felt would be the most fun way to play the game.
+    </p>
+    <p>
+        I created this enemy behavior flow chart to map out what I wanted the enemies to do and when/under what conditions they would trigger a different behavior.
+    </p>
+    <h3 style="justify-self: center;">Enemy AI State Flow Diagram</h3>
+    <div class="state-flow">
+        <img src="down-the-count/StateFlow.jpg"/>
+    </div>
+</div>
+<div class="project-body">
+    <h2>Implementing and Adjusting the AI</h2>
+    <p>
+        Once I had a mockup of the behaviors I wanted to see, my next move was to implement it and get a basic prototype working. Even in a short game jam context, I felt that a haphazard implementation would be far too fragile for the complex system I design, so I made the decision to implement a generalizable hierarchical state machine to control the execution and transition of states. I took my flow diagram and grouped behaviors in a way that felt logical to define the state hierarchy:
+    </p>
+
+    <h3 style="justify-self: center;">Enemy AI State Hierarchy Diagram</h3>
+    <div class="state-hierarchy">
+        <img src="down-the-count/StateHierarchy.jpg"/>
+    </div>
+
+    <p>
+        Once I had a basic version of the AI working, I used the configuration of state options to tweak the feel of their interactions with the player until they felt good and well-balanced with the player controller we had. And once we had mockup designs for the vampires from our atrists, we used the 2 sketches to create enemy variants: Chasers and Cleaners. The Chasers would immediately chase the player upon enntering their zone, and would not do anything else until the player left, only after which they would help clean up the mess left behind. Cleaners were mostly the opposite, still chasing the player until they started making a mess, then transitioning to cleaning. We could then use these 2 priority models to balance the feel of different rooms based on how much there was to destroy, how much open space there was, and general feel while playtesting.
+    </p>
+
+    <div style="display: flex; flex-flow: row; gap: 32px;">
+        <div style="flex: 1;">
+            <h3 style="text-align: center;">Character Designs</h3>
+            <div>
+                <img src="down-the-count/Characters.jpg" style="width: 100%; height: auto; display: block;"/>
+            </div>
+        </div>
+        <div style="flex: 1;">
+            <h3 style="text-align: center;">Chaser Enemy (In-Game)</h3>
+            <div>
+                <img src="down-the-count/Chaser.jpg" style="width: 100%; height: auto; display: block;"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

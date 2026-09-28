@@ -1,0 +1,15 @@
+<div class="carousel-container">
+    @if(previousProject) {
+        <button class="mat-button sc-button carousel-button" (click)="goTo(previousProject.id)" style="margin-right: auto;">
+            <mat-icon>keyboard_arrow_left</mat-icon>
+            <span>{{previousProject.title}}</span>
+        </button>
+    }
+
+    @if(nextProject) {
+        <button class="mat-button sc-button carousel-button" (click)="goTo(nextProject.id)" style="margin-left: auto;">
+            <span>{{nextProject.title}}</span>
+            <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+    }
+</div>
