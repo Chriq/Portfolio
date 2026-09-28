@@ -1,4 +1,5 @@
 @if (project) {
+  <app-project-carousel [currentProjectId]="project.id"></app-project-carousel>
   <div class="project-container">
     <div class="project-header">
       <div class="project-video">
@@ -38,5 +39,7 @@
     }
 
     <ng-container *ngComponentOutlet="projectComponent"></ng-container>
+
+    <app-project-carousel [currentProjectId]="project.id"></app-project-carousel>
   </div>
 }

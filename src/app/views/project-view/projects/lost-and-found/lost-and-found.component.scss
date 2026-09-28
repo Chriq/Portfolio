@@ -5,10 +5,10 @@
 }
 
 .concept-gallery {
-    float: left;
-    width: 70%;
-    padding: 8px 24px 0 0;
-
+    // float: left;
+    // width: 70%;
+    // padding: 8px 24px 0 0;
+    flex: 3;
     
 }
 
@@ -23,7 +23,7 @@ img {
 
 ul {
     line-height: 1.7;
-    color: var(--sc-text-secondary);
+    // color: var(--sc-text-secondary);
     margin-bottom: 32px;
 }
 

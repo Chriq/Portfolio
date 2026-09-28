@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { GalleryItem, GalleryModule, ImageItem } from 'ng-gallery';
-import { Project } from '../../../interfaces/media';
+import { Project } from '../../../../interfaces/media';
 
 @Component({
   selector: 'app-pick-your-poison',

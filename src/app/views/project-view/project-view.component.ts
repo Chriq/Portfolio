@@ -4,20 +4,21 @@ import { ProjectService } from '../../services/project.service';
 import { Project } from '../../interfaces/media';
 import { SafeUrlPipe } from '../../pipes/safe-url.pipe';
 import { CommonModule } from '@angular/common';
-import { FlintsHintsComponent } from './flints-hints/flints-hints.component';
-import { PickYourPoisonComponent } from './pick-your-poison/pick-your-poison.component';
-import { GivingADuckComponent } from './giving-a-duck/giving-a-duck.component';
-import { TheBoysComponent } from './the-boys/the-boys.component';
-import { LostAndFoundComponent } from './lost-and-found/lost-and-found.component';
-import { GardenComponent } from './garden/garden.component';
-import { CastawaysComponent } from './castaways/castaways.component';
-import { DownTheCountComponent } from './down-the-count/down-the-count.component';
-import { ColdCallComponent } from './cold-call/cold-call.component';
+import { FlintsHintsComponent } from './projects/flints-hints/flints-hints.component';
+import { PickYourPoisonComponent } from './projects/pick-your-poison/pick-your-poison.component';
+import { GivingADuckComponent } from './projects/giving-a-duck/giving-a-duck.component';
+import { TheBoysComponent } from './projects/the-boys/the-boys.component';
+import { LostAndFoundComponent } from './projects/lost-and-found/lost-and-found.component';
+import { GardenComponent } from './projects/garden/garden.component';
+import { CastawaysComponent } from './projects/castaways/castaways.component';
+import { DownTheCountComponent } from './projects/down-the-count/down-the-count.component';
+import { ColdCallComponent } from './projects/cold-call/cold-call.component';
 import { ProjectSummaryComponent } from './project-summary/project-summary.component';
+import { ProjectCarouselComponent } from './project-carousel/project-carousel.component';
 
 @Component({
   selector: 'app-project-view',
-  imports: [CommonModule, SafeUrlPipe, ProjectSummaryComponent],
+  imports: [CommonModule, SafeUrlPipe, ProjectSummaryComponent, ProjectCarouselComponent],
   templateUrl: './project-view.component.html',
   styleUrl: './project-view.component.scss'
 })

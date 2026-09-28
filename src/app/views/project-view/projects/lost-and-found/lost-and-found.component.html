@@ -21,13 +21,18 @@
 <div class="project-body">
     <h2>Collaborative Brainstorming</h2>
 
-    <div class="concept-gallery">
-        <gallery [items]="concepts" thumbs loop="true" thumbPosition="left" imageSize="cover" id="concepts"></gallery>
-    </div>
+    <div style="display: flex; gap: 32px; margin-bottom: 32px;">
+        <div style="flex: 1;">
+            <p class="long-description">
+                We spent about the first 2-3 hours of the jam discussing what game we were going to make. Perhaps this is a bit long, but I felt it was best to leave everyone with a clear vision of what we were making, and have everyone feel that they contributed to the formation of that vision. So I tried to be thorough in guiding the session.
+            </p>
+        </div>
 
-    <p class="long-description">
-        We spent about the first 2-3 hours of the jam discussing what game we were going to make. Perhaps this is a bit long, but I felt it was best to leave everyone with a clear vision of what we were making, and have everyone feel that they contributed to the formation of that vision. So I tried to be thorough in guiding the session.
-    </p>
+        <div class="concept-gallery">
+            <gallery [items]="concepts" thumbs loop="true" thumbPosition="left" imageSize="cover" id="concepts"></gallery>
+        </div>
+    </div>
+    
     <p class="long-description">
         The theme for Ludum Dare 59 was <i><b>Signals</b></i>, so we started off the night listing as many interpretations of using signals as we could. I budgeted about 20 minutes for ideating, and we put together a decent list with a mix of obvious and subtle interpretations. Some highlights include:
     </p>

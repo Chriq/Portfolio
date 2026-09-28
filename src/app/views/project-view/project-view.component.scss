@@ -1,5 +1,5 @@
 .project-container {
-  font-family: Arial, sans-serif;
+  // font-family: Arial, sans-serif;
 }
 
 .project-container gallery {
@@ -70,18 +70,23 @@
 }
 
 .links {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    margin: 32px;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: 32px;
+  align-items: center;
 }
 
 .links img {
-    width: 200px;
-    max-width: 100%;
-    height: auto;
-    display: block;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+app-project-carousel {
+  display: block;
+  margin-bottom: 32px;
 }
 
 @media (max-width: 900px) {
@@ -93,5 +98,9 @@
 
   .project-video {
     align-self: center;
+  }
+
+  app-project-carousel {
+    display: none;
   }
 }

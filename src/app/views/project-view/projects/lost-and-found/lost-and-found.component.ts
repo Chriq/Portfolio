@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 import { GalleryItem, ImageItem, GalleryComponent } from 'ng-gallery';
-import { ProjectSummaryComponent } from '../project-summary/project-summary.component';
-import { Project } from '../../../interfaces/media';
-import { ProjectService } from '../../../services/project.service';
 
 @Component({
   selector: 'app-lost-and-found',
