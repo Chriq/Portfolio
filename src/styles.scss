@@ -69,6 +69,7 @@ a {
   color: var(--sc-accent);
   text-decoration: none;
   transition: color var(--sc-transition-fast);
+  cursor: pointer;
 }
 
 a:hover {
