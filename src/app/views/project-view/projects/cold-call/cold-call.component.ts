@@ -4,7 +4,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-cold-call',
-  imports: [MatExpansionModule],
+  imports: [MatExpansionModule, RouterLink],
   templateUrl: './cold-call.component.html',
   styleUrl: './cold-call.component.scss'
 })
