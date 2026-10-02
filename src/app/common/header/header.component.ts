@@ -18,17 +18,10 @@ export class HeaderComponent {
 
   menuOpen = false;
 
-  // menuOptions: string[] = [
-  //   "Portfolio",
-  //   "Resume",
-  //   "About",
-  //   "Contact"
-  // ];
-
   menuOptions: string[] = [
     "Home",
-    "Music",
     "Games",
+    "Music",
     "About",
     "Contact"
   ];

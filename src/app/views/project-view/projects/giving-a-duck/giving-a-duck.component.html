@@ -1,13 +1,10 @@
 <div class="project-body">
     <h2>First Foray into Multiplayer</h2>
     <p>
-        This game was made for the <i>That Game Company x Coreblazer Jam 2025</i> with the theme of <i>Generosity</i>. My friend and I had wanted to make a multiplayer game together for a while and the theme seemed to align with that goal perfectly. We spent the first day of the jam brainstorming ideas, talking through various game we've both enjoyed that may have elements of generosity, or otherwise interesting multiplayer mechanics we could work in.
+        <i>The Subtle Art of Giving a Duck</i> was made for the <i>That Game Company x Coreblazer Jam 2025</i> with the theme of <i>Generosity</i>. I started the jam working with my friend, Jack, who had wanted to make a multiplayer game for a while, and this was the perfect opportunity for me to start learning. Together we came up with the inital concept, and did some early prototyping before he had to drop for other obligations. The challenges were twofold: learning the technical details of how to program a multiplayer game (using Godot's built-in ENet Multiplayer API), but also how to design one. The best multiplayer games don't simply take a singleplayer experience and allow multiple people to play together. They leverage the multiplayer capability as a mechanic in itself and build the features, levels, and systems in a way that encourages player interactions. I wanted to create a game that took advantage of all the technical work to make something that actually used it in an interesting way, and with a theme of Generosity, we needed to design around cooperative interactions.
     </p>
     <p>
-        One early inspiration was, of course, That Game Company's own <i>Journey</i>. The collaborative exploration and problem solving in <i>Journey</i>, combined with its limits on player communication, served as core influences in designing our own world and player interaction mechanics.
-    </p>
-    <p>
-        Another big influence was <i>Mosa Lina</i> by Stuffed Wombat. The limited and random abilities for navigating the world and solving puzzles gave us a great foundation for thinking about how players could use these kinds of abilities in a collaborative way.
+        The core premise is playing as 1 of (up to) 4 duck characters trapped in a cursed mountain. The level contains various platforming challenges in order to reach Golden Eggs scattered around the play space. The catch is that many of the eggs require multiple movement abilities to reach, (<i>ie.</i> double jump, wall jump, etc.) but each player starts with only one. In order to collect all of the eggs and complete the game, players must demonstrate not only their platforming skills, but also cooperation to the group via the game's primary multiplayer interaction: Requests.
     </p>
 </div>
 
@@ -18,9 +15,42 @@
 <div class="project-body">
     <h2>Cultivating a Collaborative Experience</h2>
     <p>
-        The central design challenge we faced was creating an experience that incentivized players to work together to navigate the world we created and solved the puzzles it contained. Our original vision entailed a massive world too large for any 1 player to navigate on their own, and a vast multitude of abilities to draw on for puzzle/level design. However, this was for a game jam, so we only had 3 weeks to execute our vision. 
+        Communication is limited in the game. There is no chat. The only way to interact other than players seeing you on-screen is making an ability request. The other players will see that someone needs an ability, and whoever has it can choose to give it up or not. This creates the opportunity for generosity as required by the jam: the player with an ability someone else needs has the option to give it up for the greater goal of finishing the game at the risk of not getting it back or not getting abilities they need. And without abilities, they'd be a <i>sitting duck</i>.
     </p>
     <p>
-        We had to make many compromises along the way, scaling back the world and the abilities, challenging what we felt was the main incentive to work together. In a world that is navigable by a single player, we felt that the best alternative was to utilize multiple movement mechanics in each puzzle. That way, as players explore different parts of the map, they will need different abilities at different times, facilitating trade, or even a sense of generosity in giving up your ability to navigate easily.
+        One early inspiration was, of course, That Game Company's own <i>Journey</i>. Its collaborative exploration and problem solving, combined with its limits on player communication, served as core influences in designing our own world and request system. I wanted to create a sense of ambiguity and uncertainty around the requests so that players had to take each other at their word that it was worthwhile giving up their abilities. You can't describe what is in front of you, so you had to work within the limitations of communication as players in <i>Journey</i> have to do to solve puzzles together.
+    </p>
+    <p>
+        Another big influence was <i>Mosa Lina</i> by Stuffed Wombat. The limited and randomized abilities for navigating the world and solving puzzles gave us a great foundation for thinking about how players could use these kinds of abilities in a collaborative way. I admired how each level necessarily had multiple ways to solve it, yet it was always easier and more fun to do so with other people. Some combinations of abilities would make the level impossible, one of the drawbacks of the randomization. But a lot of runs were only made possible, or at least more engaging, when players had to work together to remove obstacles for one another, or tag team different markers to make sure they were all cleared. While <i>Mosa Lina</i> can be fully experienced as a singleplayer game, I wanted to capture the feeling of giving everyone their own unique abilities to clear a level together that I got from its multiplayer.
+    </p>
+</div>
+
+<div class="project-body">
+    <h2>Contending With Limitations</h2>
+    <p>
+        Our original vision entailed a massive world too large for any 1 player to navigate on their own, and a vast multitude of abilities to draw on for puzzle/level design. The idea was that a large world would incentivize players to give up their abilities than to go find the faraway egg themselves, and that more abilities would ensure players weren't completely powerless when giving theirs up. However, given the time constraints of the jam, I had to make difficult cuts in scope in order to meet the 3 week deadline. 
+    </p>
+    <p>
+        In this scaled-back world that is now navigable by a single player, I felt that the best way to encourage interaction was through combining mechanics. This limitation was the origin of having platforming puzzles that required multiple abilities to get through so that now, instead of the map being so large that trade is just more feasible, it is impossible to complete most of the challenges without others' generosity. Ultimately, the limitation led to what I believe is a better design outcome, as well as a more feasible one.
+    </p>
+</div>
+
+<div class="project-body">
+    <h2>Technical Challenges</h2>
+    <p>
+        Given that this was my first experience programming a multiplayer game, the whole experience made me think about implementing features in a new way. I could no longer simply add in a feature, I had to consider <i>where</i> its functionality was executing, and <i>who</i> knew about it. I got my hands dirty while developing my intuition for RPC programming practices. While programming, seeing duplicated events, contradicting world and UI information, and function calls that would go nowhere gave me the insights I needed to understand how this was all working under the hood. It pointed me in the right direction, back to the server as the source of truth that would do most of the heavy lifting, while the clients simply received its instructions. In staying synced, RPC calls were my friend.
+    </p>
+</div>
+
+<div class="project-body">
+    <h2>Reception, Feedback, and Lessons</h2>
+    <p>
+        The unfortunate reality of making a multiplayer game for a jam is that far fewer people are able to get the necessary group together to play. Regardless, those who were able to play had very kind things to say and some good feedback/insights as well. A notable comment highlighted how our ability request mechanic addressed coordination issues this person experienced in a lot of multiplayer games, and how the concept felt refreshing.
+    </p>
+    <p>
+        From watching groups of friends play, I saw that, for the most part, people were trading with each other as they ran into ability gates. Though sometimes, especially as the game went on to its final few eggs, one player would tend to end up with most or all of the abilities and finish it out. There may be a few ways to solve this: adding a limit to how many abilities you can hold (though also placing a limit on how many abilities a puzzle can be designed for), making the area larger as initially intended, and maybe giving some kind of buff/reward for how many eggs a player collects so everyone is also incentivized to want to collect eggs themselves while simultaneously not being able to do it all themselves. Any one of these would help deepen the desired dynamic, but together they might even make the game more fun to play in a group.
+    </p>
+    <p>
+        If I had to prioritize one of these solutions in an update to the game, I think adding an incentive to the eggs outside of the global need to collect them all would be the most balanced value-add. It would bolster the dynamic of balancing your own experience with the good of the group, for not very much added complexity. Even a UI element counting your eggs and an end card displaying each player's count may be enough to trigger a bit more self-interest to create a meaningful decision between your own goals and the group's. This whole exercise in making this game has given me the insight to back up my claim in the value of using multiplayer as a mechanic. Even in a cooperative game, you can still create conflict by providing competing interests between the players and the collective goals. That's something you can't get by simply adding a multiplayer feature in a singleplayer game.
     </p>
 </div>
